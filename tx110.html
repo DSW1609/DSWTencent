@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>腾讯110-帐号安全、QQ/微信违规行为举报受理综合服务平台</title>
+<link rel="stylesheet" type="text/css" href="style/style110.css">
+<link rel="stylesheet" type="text/css" href="style/liMarquee.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.liMarquee.js"></script>
+<script src="js/gd.js"></script>
+</head>
+<body scroll="no">
+<div class="all">
+ <div class="body">
+	 <!--头部内容开始-->
+  <div class="head">
+	  <!--首页大图轮播开始-->
+	  <div class="lb">
+		<div class="imglist">
+		<img src="image/lb1.png" alt="lb1" id="lb1">
+		<img src="image/lb2.jpg" alt="lb2" id="lb2">
+		<img src="image/lb3.png" alt="lb3" id="lb3">
+		<img src="image/lb4.png" alt="lb4" id="lb4">
+		<img src="image/lb5.png" alt="lb5" id="lb5">
+			 </div>
+	  </div>
+	  <!--轮播结束-->
+	  <!--左上logodiv-->
+        <div class="logo" onclick="location.href='tx110.html'"><img src="image/official-logo.png" alt="logo" width="45px;">
+   </div>
+		<div class="logote"><p>腾讯110</p><a>安全因服务而安心</a>
+   </div>
+	  <!--右上导航栏-->
+		<div class="nav">
+			<a href="index.html">首页</a>
+			<a href="*">安全课堂</a>
+			<a href="*">常见问题</a>
+			<a href="*">关于我们</a>
+			<a>|</a>
+			<a href="*">登录</a>
+		</div>
+	  <!--隐藏浮动导航栏-->
+	  <div class="nav2" id="nav2">
+	  <div class="logo" onclick="location.href='tx110.html'"><img src="image/official-logo.png" alt="logo" width="45px;"></div>
+		<div class="logote"><p>腾讯110</p><a>安全因服务而安心</a></div>
+	    <div class="nav">
+			<a href="index.html" target="_blank">首页</a>
+			<a href="*">安全课堂</a>
+			<a href="*">常见问题</a>
+			<a href="*">关于我们</a>
+			<a>|</a>
+			<a href="*">登录</a>
+		</div>
+	  </div>
+	</div>
+	 <!--head结束-->
+		<!--中部内容开始-->
+	<div class="nr" id="nr">
+		<!--我要举报弹窗div-->
+		<div class="wyjbxf" id="xf"><img src="image/xcxu.PNG" alt="xcxu" width="170px;"><a>使用【微信】扫描二维码完成举报</a>
+			<div class="wyjbxfx" onclick="xfx()" onmouseover="xfxright()" onmouseout="xfxleft()"><img src="image/xleft.gif" alt="x" width="18px;" id="x"></div>
+		</div>
+		<!--封号解封弹窗div-->
+		<div class="jfxf" id="jfxf"><img src="image/zhjf.PNG" alt="jf" width="400px;"><a>进入“腾讯客服”小程序，选择“微信/QQ申请解封”工具</a>
+			<div class="jfxfx" onclick="xfx()" onmouseover="xfxright()" onmouseout="xfxleft()"><img src="image/xleft.gif" alt="x" width="23px;" id="jfx"></div>
+			<div class="jfxfte"><span>封号解封</span></div>
+		</div>
+		<!--选择账号弹窗div-->
+	    <div class="jdxf" id="jdxf">
+			<a href="https://aq.qq.com/cn2/index" target="_blank" id="xzqq"><img src="image/dlqq.PNG" alt="xcxu" width="100px;"></a>
+			<a href="https://weixin110.qq.com/security/readtemplate?t=account_frozen/acct&type=frozen" target="_blank" id="xzwx"><img src="image/dlwx.PNG" alt="xcxu" width="100px;"></a><a2 id="xfte">选择账号</a2>
+			<div class="jdxfx" onclick="xfx()" onmouseover="xfxright()" onmouseout="xfxleft()"><img src="image/xleft.gif" alt="x" width="23px;" id="jdx"></div>
+		    <div class="dlqq" id="dlqq"><span>QQ</span><span>微信</span></div>
+		</div>
+		<div class="erweima"><img src="image/wxright.png" alt="ewm" width="110px;" style="margin:5px 5px 6px; 5px;"><a>关注官方微信公众号<br />了解最新防骗秘笈</a></div>
+		<!--搜索框-->
+		<div class="ssleft">
+			<input type="text" placeholder="输入您想搜索的电话号码、银行卡号、网址链接">
+			<div class="hdright"></div>
+			<div class="ssright" onmouseover="ss1()" onmouseout="ss2()"><img src="image/ss1.png" width="20px;" alt="ss" id="ss"><a>诈骗信息查询</a></div>
+		</div>
+		<!--我要举报-->
+	  <div class="wyjb" onmouseover="wyjb()" onmouseout="wyjbout()" onclick="wyjbcl()">
+	  <img src="image/jb1.png" width="40px" alt="zh1" id="jbleft"><p>我要举报</p><br /><a>举报在QQ/微信平台上的违法违规行为</a>
+	  </div>
+	  <div class="wyjbewm"><img src="image/jb110ri.png" alt="right"></div>
+	  <!--四个并排可点击div-->
+	  <div class="zh1" onmouseover="dj()" onmouseout="djout()" onClick="djcl()"><img src="image/djie1.PNG" alt="zh1" id="dj2"><a>冻结账号</a></div>
+	  <div class="zh2" onmouseover="jd()" onmouseout="jdout()" onClick="jdcl()"><img src="image/jdong.png" alt="zh2" id="jd"><a>解冻账号</a></div>
+	  <div class="zh3" onmouseover="zm()" onmouseout="zmout()" onClick="zmcl()"><img src="image/zmi.png" alt="zh3" id="zm"><a>账号找密</a>
+	  </div>
+	  <div class="zh4" onmouseover="jf()" onmouseout="jfout()" onClick="jfcl()"><img src="image/jfeng.png" alt="zh4" id="jf"><a>封号解封</a></div>
+	  <!--打击公示-->
+	  <div class="djgs"><p>打击公示</p><br /><a>累计打击违规帐号</a><br /><a1>3,387,058</a1><a2>个</a2>
+		<div class="djright"><img src="image/img-publicity.png" alt="dj"></div>
+		  <!--打击滚动-->
+		  <div class="djgd">
+			  <div class="dowebok">
+                  <ul>
+                    <li><a5>21名网友</a5>举报了<a6>h1****81</a6>黄赌毒<a>已处罚</a></li>
+                    <li><a5>22名网友</a5>举报了<a6>27*****22</a6>黄赌毒<a>封号3天</a></li>
+                    <li><a5>15名网友</a5>举报了<a6>22****13</a6>黄赌毒<a>封号3天</a></li>
+                    <li><a5>17名网友</a5>举报了<a6>27*****98</a6>黄赌毒<a>封号7天</a></li>
+                    <li><a5>15名网友</a5>举报了<a6>zz****56</a6>黄赌毒<a>封号7天</a></li>
+                    <li><a5>17名网友</a5>举报了<a6>gu****77</a6>违规使用腾讯业务<a>已处罚</a></li>
+                    <li><a5>20名网友</a5>举报了<a6>de****88</a6>黄赌毒<a>永久封号</a></li>
+                    <li><a5>22名网友</a5>举报了<a6>ss****33</a6>违规使用腾讯业务<a>永久封号</a></li>
+                    <li><a5>19名网友</a5>举报了<a6>29****86</a6>其他有害信息及恶意<a>已处罚</a></li>
+                    <li><a5>14名网友</a5>举报了<a6>14****00</a6>其他有害信息及恶意<a>封号7天</a></li>
+                 </ul>
+             </div>
+	     </div>
+	  </div>
+		<!--右下留言板-->
+		 <div class="lyb"><p>留言板</p>
+			 <!--留言1-->
+		  <div class="lybody1">
+			<div class="lytx"><img src="image/official-logo.png" alt="tx" width="38px;"></div>
+			<div class="lyname"><a>腾讯110</a><a1>V</a1><a2>2019-01-14 10:31:15</a2><br /><a3>各位小伙伴，你们好！非常感谢你们的留言...</a3>
+			</div>
+		  </div>
+			 <!--留言2-->
+		  <div class="lybody2">
+			<div class="lytx"><img src="image/132.jpg" alt="tx" width="38px;"></div>
+			<div class="lyname"><a>黑名聃。&nbsp;</a><a2>2019-03-19 19:22:16</a2><br /><a3>坚决遏制714套路贷，希望国家真的重视起来...</a3>
+			</div>
+		  </div>
+			 <!--留言3-->
+		  <div class="lybody3">
+			<div class="lytx"><img src="image/g.jpg" alt="tx" width="38px;"></div>
+			<div class="lyname"><a>轻舞飞扬 &nbsp;</a><a2>2019-01-14 10:31:15</a2><br /><a3>给你们腾讯诚恳的提个建议：为了青少年孩子...</a3>
+			</div>
+		  </div>
+			 <!--留言4-->
+		  <div class="lybody4">
+			<div class="lytx"><img src="image/g2.jpg" alt="tx" width="38px;"></div>
+			<div class="lyname"><a>勿忘初心 &nbsp;</a><a2>2019-03-20 13:55:02</a2><br /><a3>看到身边有很多朋友和同学被网络诈骗所伤害...</a3>
+			</div>
+		  </div>
+			 <!--留言5-->
+		  <div class="lybody5">
+			<div class="lytx"><img src="image/g2.jpg" alt="tx" width="38px;"></div>
+			<div class="lyname"><a>勿忘初心 &nbsp;</a><a2>2019-03-20 13:55:02</a2><br /><a3>腾讯作为中国人不可缺少的一部分，应用的...</a3>
+			</div>
+		  </div>
+		  <div class="lymore"><a href="https://110.qq.com/message.html">我要留言<a style="letter-spacing: -3px;">&gt;&gt;</a></a></div>
+		 </div>
+		<!--中间新闻开始-->
+		<div class="xinwenbody">
+			<div class="xinwen"><img src="image/xinwenleft.jpg" alt="xw1">
+				<h2><a href="*">真卖家假买家，如何上演一出好戏</a></h2><span>案例</span>
+				<a1>2019-03-22 10:15:36</a1>
+				<a2>闲置物品怎么办，留着没用，仍了不舍，有人选择二手平台交易，但你遇上的“买家”和“客服”，可能都是假的</a2>
+				<div class="xinwenhx"></div>
+			</div>
+			<div class="xinwen2"><img src="image/anquan110.jpg" alt="xw1">
+				<h2><a href="*">腾讯110与微信安全开展非法信贷打击行动</a></h2><span>案例</span>
+				<a1>2019-03-21 15:31:47</a1>
+				<a2>提高风险防范意识，注意甄别信息真伪</a2>
+				<div class="xinwenhx"></div>
+			</div>
+			<div class="xinwen3"><img src="image/leftnvh110.jpg" alt="xw1">
+				<h2><a href="*">爸，帮我交下培训费，多名家长被骗过万</a></h2><span>案例</span>
+				<a1>2019-03-19 11:40:06</a1>
+				<a2>网络那头喊你爸爸的，也许并不是你家孩子。</a2>
+				<div class="xinwenhx"></div>
+			</div>
+			<div class="xinwen4"><img src="image/leftmr110.jpg" alt="xw1">
+				<h2><a href="*">都在用网贷消费，可你真的了解它吗？</a></h2><span>专题</span>
+				<a1>2019-03-17 17:14:05</a1>
+				<a2>贷款背后的坑，你知道吗？</a2>
+				<div class="xinwenhx"></div>
+			</div>
+			<div class="xinwen5"><img src="image/leftpz110.jpg" alt="xw1">
+				<h2><a href="*">骗子为了拿到你的付款码，会耍多少花招？</a></h2><span>专题</span>
+				<a1>2019-03-16 19:12:59</a1>
+				<a2>付款码和收款码，还在傻傻分不清楚？</a2>
+				<div class="xinwenhx"></div>
+			</div>
+		</div>
+		<div class="more"><a href="https://110.qq.com/lesson.html">更多内容<a style="letter-spacing: -3px;">&gt;&gt;</a></a></div>
+		<!--底部body开始-->
+		<!--分割线-->
+		<div class="hxleft"></div><div class="hzhb"><a>合作伙伴</a></div><div class="hxright"></div>
+		<!--logo轮播-->
+		<div class="hzlb">
+	      <img src="image/cooper1.png"  alt="1">
+	      <img src="image/cooper16.png" alt="16">
+	      <img src="image/cooper2.png"  alt="2">
+	      <img src="image/cooper3.png"  alt="3">
+	      <img src="image/cooper4.png"  alt="4">
+	      <img src="image/cooper5.png"  alt="5">
+	      <img src="image/cooper15.png" alt="15">
+	      <img src="image/cooper6.png"  alt="6">
+	      <img src="image/cooper7.png"  alt="7">
+	      <img src="image/cooper8.png"  alt="8">
+	      <img src="image/cooper9.png"  alt="9">
+	      <img src="image/cooper10.png" alt="10">
+	      <img src="image/cooper11.png" alt="11">
+	      <img src="image/cooper13.png" alt="13">
+	      <img src="image/cooper14.png" alt="14">
+		</div>
+  </div>
+		<!--nrdiv结束-->
+		<!--bottom开始-->
+	<div class="hxbottom"></div>
+	<div class="bottom">
+		<a> 关于腾讯</a> | <a>About Tencent</a> | <a>服务条款</a> | <a>腾讯客服</a> | <a>QQ安全中心</a><br />
+    <a2>Copyright © 1998 - 2019 Tencent. All Rights Reserved. 腾讯公司 版权所有 粤网文[2011]0483-070号</a2><br />
+	</div>
+  </div>
+</div>
+</body>
+</html>

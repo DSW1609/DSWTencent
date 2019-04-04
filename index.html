@@ -1,0 +1,397 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><!--加入titlelogo无效...-->
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<title>腾讯首页</title>
+<script type="text/javascript">
+function reloadPage(){//刷新  
+  window.location.reload();
+  }
+function topFunction() {//回到顶部
+   document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+}
+function bs2(){//变色代码-3(控制类名)
+	var bs2 = document.getElementById("bs2");
+	bs2.className="nav2";
+}
+function bs(){
+	var bs = document.getElementById("bs2");
+	bs.className="nav";
+}
+function bs3(){
+	var bs3= document.getElementById("bs2");
+	bs3.className="nav3";
+}//变色代码结束
+function big(){//右侧其他导航栏变换class
+	var qtbig= document.getElementById("qtbig");
+	qtbig.className="qitanavbig";
+	var qtlogo= document.getElementById("qtlogobig");
+	qtlogo.className="qtnavlogobig";
+	var qt1big= document.getElementById("qt1big");
+	qt1big.className="qt1big";
+	var qt2big= document.getElementById("qt2big");
+	qt2big.className="qt2big";
+	var qt3big= document.getElementById("qt3big");
+	qt3big.className="qt3big";
+	var qt4big= document.getElementById("qt4big");
+	qt4big.className="qt4big";
+}//结束
+function def(){//鼠标移出恢复
+	var defqt= document.getElementById("qtbig");
+	defqt.className="qitanav";
+	var qtlogo= document.getElementById("qtlogobig");
+	qtlogo.className="qtnavlogo";
+	var qt1big= document.getElementById("qt1big");
+	qt1big.className="qt1";
+	var qt2big= document.getElementById("qt2big");
+	qt2big.className="qt2";
+	var qt3big= document.getElementById("qt3big");
+	qt3big.className="qt3";
+	var qt4big= document.getElementById("qt4big");
+	qt4big.className="qt4";
+	}
+		//滑动出现右侧快捷按钮
+ $(function () {  //绑定滚动条事件          
+     $(window).bind("scroll", function () {//绑定滚动条事件 
+        var sTop = $(window).scrollTop();
+        var sTop = parseInt(sTop);
+        if (sTop >= 200) {
+			$("#kjbt").show();
+		}else {
+			$("#kjbt").hide();
+		} 
+  });
+})
+</script>
+</head>
+<body>
+<div class="all">
+<div class="nr" onMouseOut="def()">
+	<!--logodiv-->
+	<div class="logo" onclick="location.href='index.html'"><img src="image/qq_logo_2x.png" alt="腾讯网" width="131px;"></div>
+	<!--导航右侧触碰按钮-->
+	<div class="bs"><input type="button" onMouseover="bs2()"></div>
+	<div class="bs2"><input type="button" onMouseover="bs()"></div>
+	<div class="bs3"><input type="button" onMouseover="bs3()"></div>
+	<!--导航搜索栏-->
+		<div class="sousuo" id="ss">
+		<div class="jt"><img src="image/timg.jpg" alt="" width="10px;" height="5px;"></div>
+			<select class="xl">
+						<option>网页</option>
+						<option>图片</option>
+						<option>视频</option>
+						<option>音乐</option>
+						<option>地图</option>
+			</select>
+		</div>
+	<div class="shuru"><input type="text" style="width: 320px;height: 20px;border: none;background:#f3f6f8;"></div>
+	<div class="sblue"><a href="http://www.sogou.com" target="_blank">搜狗搜索</a></div>
+	<!--搜索结束-->
+	<!--右上三个按钮-->
+	<div class="qzone" onclick="window.open('http://qzone.qq.com')"></div>
+	<div class="email" onclick="window.open('http://mail.qq.com')"></div>
+	<div class="up">登录</div>
+	<!--导航开始-->
+	<div id="bs2" class="nav">
+		<ul>
+			<li><a href="http://news.qq.com/" target="_blank">新闻</a></li>
+			<li><a href="http://v.qq.com/" target="_blank">视频</a></li>
+			<li><a href="http://news.qq.com/ch/phont/" target="_blank">图片</a></li>
+			<li><a href="http://news.qq.com/ch/milite/" target="_blank">军事</a></li>
+			<li><a href="http://sports.qq.com/" target="_blank">体育</a></li>
+			<li><a href="http://sports.qq.com/nba/" target="_blank">NBA</a></li>
+			<li><a href="http://news.qq.com/ch/ent/" target="_blank">娱乐</a></li>
+			<li><a href="http://finance.qq.com/" target="_blank">财经</a></li>
+			<li><a href="http://new.qq.com/ch/tech/" target="_blank">科技</a></li>
+			<li><a href="http://news.qq.com/ch/fashion/" target="_blank">时尚</a></li>
+			<li><a href="http://auto.qq.com" target="_blank">汽车</a></li>
+			<li><a href="http://house.qq.com/" target="_blank">房产</a></li>
+			<li><a href="https://new.qq.com/ch/edu/" target="_blank">教育</a></li>
+			<li><a href="https://new.qq.com/ch/cul/" target="_blank">文化</a></li>
+			<li><a href="http://news.qq.com/ch/game/" target="_blank">游戏</a></li>
+			<li><a href="http://astro.fashion.qq.com/" target="_blank">星座</a></li>
+			<li><a href="http://www.qq.com/map" target="_blank">更多</a></li>
+		</ul>
+	</div>
+	<!-- 右侧浮动导航栏-->
+	<div class="kjbutton" id="kjbt">
+		<div class="sx"><button value="刷新" onClick="reloadPage()">刷新</button></div>
+		<div class="fk">反馈</div>
+		<div class="top"><button onClick="topFunction()" id="myBtn"><img src="image/top.png" alt="top" width="25px;"></button></div>
+	</div>
+	<!--导航下滚动广告-->
+	<div class="gg1">
+		<div class="imglist">
+		<img src="image/gg1.png" alt="1" id="img1">
+		<img src="image/gg2.png" alt="2" id="img2">
+		<img src="image/gg1.png" alt="1" id="img3">
+		<img src="image/gg2.png" alt="1" id="img4">
+	  </div>
+	</div>
+	<!--滚动广告结束-->
+	<!--右侧腾讯110广告-->
+	<div class="lbgg1" onclick="location.href='tx110.html'" id="gg"></div>
+	<!--要闻开始-->
+	<div class="yaowen">
+	    <a>要闻</a>
+		<div class="ywhx"></div>
+		<div class="ywhxc"></div>
+		<div class="tq"><a>济南</a></div>
+		<div class="tqimg"></div>
+		<div class="wendu"><a>15℃</a></div>
+	<div class="ywbody">
+		<h2>习近平殷殷深情寄八闽</h2>
+		<h3>习近平参加福建代表团审议时的重要讲话产生热烈反响</h3>
+		<h3>为创新创业创造厚植土壤 在推进高质量发展中创造广阔空间</h3>
+		<h3>政协十三届二次会议举行第三次全体会议 <a>两会专题</a></h3>
+		<h3>既是“促进法”也是“保护法” 坚持问题导向 敢于动真碰硬</h3>
+		<h3>九大亮点重温国企改革发展记者会！ <a>部长发声</a> <a>代表委员</a></h3>
+		<h3>“这是一条互利共赢的路” <a>学习强国</a> </h3>
+		<h3>构建新时期和谐的水生态环境</h3>
+		<div class="ywgg1"></div>
+		<div class="kandian"><h3>今日两会看点：市场监管总局局长、生态环境部长答记者问</h3></div>
+		<h3>海南抗日英雄黄魂：热血忠魂浩气长存</h3>
+		<h3>从疫苗安全到保健品乱象 你关心的热点这场发布会都回应了</h3>
+		<h3>科技部部长王志刚谈“基因编辑”：将出法规约束科研伦理</h3>
+		<h3>中国民航局将派人参与波音事故机型调查 </h3>
+		<h3>“玉兔二号”月球车完成出月午设置 继续开展第三月昼工作</h3>
+		<h3>刷屏的中国米饭美国汉堡背后 还有一张图</h3>
+		<h3>一文读懂埃塞航空坠机事故：残骸散落在1万平米内</h3>
+		<h3>国内航司暂停运行波音737MAX客机 该机型客机半年坠毁2架</h3>
+		<h3>华北地下水超采怎么治？中国要做第一个吃螃蟹的国家</h3>
+		</div>
+	</div>
+	<!--要闻结束-->
+	<!--话题开始-->
+	<div class="huati">
+	 <a>今日话题</a>
+		<div class="ywhx"></div>
+		<div class="hthxc"></div>
+	  <div class="htbody">
+		<h2>每月一次小长假，还是隔周休三天？都不重要</h2>
+		<h3><a>半月谈网&nbsp;</a>| 短缺、涨价、停产 ?廉价常用药哪儿去了 </h3>
+		<h3><a>中青评论&nbsp;</a>| 夸夸群风靡高校，无厘头娱乐折射出真实情感需求</h3>
+		<h3><a>腾讯大家&nbsp;</a>| 6万元只种了半颗牙，我是怎么被痛宰的？</h3>
+		<h3><a>财看见&nbsp;</a>| 日赚3亿 图解保险业航母中国平安是如何赚钱的？</h3>
+		<h3><a>谷雨实验室&nbsp;</a>| 北京大妈有多套房仍爱捡破烂：“我愿意！”</h3>
+		<h3><a>短史记&nbsp;</a>| 朱元璋出身明教建立“大明”？并非史实</h3>
+		<!--和陌生人说话-->
+		<div class="hmsrsh"><img src="image/hmsrsh.png" width="130px;" alt="hmsrsh"></div>
+		<div class="hmsrshbg"><img src="image/hd_bg.png" alt="bg" width="323px;" height="5px;"></div>
+		<div class="hmsrpic"></div>
+		<div class="kandian"><h3>不会说话也能唱歌！一个“啊”字唱出心中的歌</h3></div>
+		<h3>[台前] 什么是真正的freestyle？他们听不见声音照样唱嘻哈</h3>
+		<h3>[幕后] 听障孩子也能唱歌？老师用这个方法让他们听见世界</h3>
+		<div class="videolist">
+		<h3><div class="videologo"><img src="image/videologo.png" alt="video"></div><a>谷雨影像&nbsp;</a>| 报社主编遭儿子“吐槽”：你的新闻都过时了</h3>
+		<h3><div class="videologo"><img src="image/videologo.png" alt="video"></div><a>巅锋问答&nbsp;</a>| 谁是中国流行音乐最强词人？方文山：李宗盛</h3>
+		<h3><div class="videologo"><img src="image/videologo.png" alt="video"></div><a>十分视频&nbsp;</a>| 小伙“卧底”东北农村 探秘二人转的前世今生</h3>
+		<!--图话开始-->
+		<div class="th">图话</div>
+		<div class="thbg"><img src="image/hd_bg.png" alt="bg" width="405px;" height="5px;"></div>
+		<h3><div class="videologo"><img src="image/thlogo.png" alt="video"></div><a>中国温度&nbsp;</a>| 村姑月薪千元拒绝等“饭球” 带留守妇女创业</h3>
+		<h3><div class="videologo"><img src="image/thlogo.png" alt="video"></div><a>谷雨&nbsp;</a>| 纪录片《偶像》：那些月收入低于一千的音乐人</h3>
+		<h3><div class="videologo"><img src="image/thlogo.png" alt="video"></div><a>体坛&nbsp;</a>| NBA名将想看《复联4》首映 建议联盟休赛一天</h3>
+		</div>
+	  </div>
+    </div>
+	<!--话题结束-->
+	<!--右侧变换其他导航栏开始-->
+	<div class="qitanav" id="qtbig" onMouseOver="big()">
+	  <div class="qtjt">🐴</div>
+	  <div class="qtnavlogo" id="qtlogobig"></div>
+		<div class="qt1">
+		<ul>
+			<li>新闻APP</li>
+			<li>体育APP</li>
+			<li>企鹅号</li>
+			<li>快报</li>
+			<li>视频</li>
+			<li>浏览器</li>
+			</ul>
+		</div>
+		<div class="qt1" id="qt1big">
+		<ul>
+			<li>新闻APP</li>
+			<li>体育APP</li>
+			<li>企鹅号</li>
+			<li>快报</li>
+			<li>视频</li>
+			<li>浏览器</li>
+			<li>微视</li>
+			<li>享看</li>
+			<li>体育APP</li>
+			<li>QQ拼音</li>
+			<li>QQ影音</li>
+			<li>QQ影像</li>
+			<li>微云</li>
+			<li>文档</li>
+			</ul>
+		</div>
+		<div class="qt2" id="qt2big">
+		  <ul>
+			<li>微信</li>
+			<li>QQ</li>
+			<li>空间</li>
+			<li>企业微信</li>
+			<li>邮箱</li>
+			<li>腾讯云</li>
+			<li>电脑管家</li>
+			<li>会员</li>
+			<li>微视</li>
+			<li>QQ阅读</li>
+			<li>QQ音乐</li>
+			<li>全民K歌</li>
+			<li>手机空间</li>
+			<li>手机QQ</li>
+			<li>手游宝</li>
+			</ul>
+		</div>
+		<div class="qt3" id="qt3big">
+		 <ul>
+			<li>LOL</li>
+			<li>DNF</li>
+			<li>CF</li>
+			<li>逆战</li>
+			<li>火影OL</li>
+			<li>天刀</li>
+			<li>爱玩</li>
+			<li>冒险岛2</li>
+			<li>QQ飞车</li>
+			<li>英雄</li>
+			<li>龙之谷</li>
+			<li>FIFA</li>
+			<li>魂斗罗</li>
+			<li>CF手游</li>
+			<li>天龙手游</li>
+			</ul>
+		</div>
+			<div class="qt4" id="qt4big">
+		<ul>
+			<li>星钻</li>
+			<li>QQ彩票</li>
+			<li>彩贝</li>
+			<li>时光画轴</li>
+			<li>天气</li>
+			<li>用户社区</li>
+			<li><a>全部</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--其他导航栏结束-->
+	<!--赛事开始-->
+	<div class="saishi">
+	<a>热门赛事</a>
+		<div class="sshx"></div>
+		<div class="hthxc"></div>
+		<div class="time"><a>3月18日&nbsp;|&nbsp;</a></div>
+		<div class="xwhao"><a>下午好，今天有53场热门比赛</a><a style="color: rgba(20,121,215,1.00);font-size: 15px;letter-spacing: -3px;">&gt;&gt;</a></div>
+		<div class="saishibg"><img src="image/saishi.png" alt="saishi" width="440" style="border-radius: 5px;"></div>
+		<!--赛事新闻视频列表-->
+		<div class="sslist">
+		<h3><div class="videologo"><img src="image/videologo.png" alt="video"></div><a>莱昂纳德25分猛龙双杀湖人 詹姆斯29分6助攻</a></h3>
+		<h3><div class="videologo"><img src="image/videologo.png" alt="video"></div><a>马修斯补篮绝杀！步行者险胜雷霆 乔治空砍36分</a></h3>
+		<h3><div class="videologo"><img src="image/videologo.png" alt="video"></div><a>炸裂！NBA准状元13投全中砍29分 多次平筐暴扣</a></h3>
+		<h3><div class="videologo"><img src="image/videologo.png" alt="video"></div><a>天下武功唯快不破 欧冠十大教科书般的快速反击 </a></h3>
+		<h3><div class="videologo"><img src="image/videologo.png" alt="video"></div><a>CBA常规赛最后悬念即将揭晓 七大奖项花落谁家？</a></h3>
+		<h3><div class="videologo"><img src="image/videologo.png" alt="video"></div><a>发起“为气候罢课”运动 16岁少女提名诺贝尔和平奖</a></h3>
+		<h3><div class="videologo"><img src="image/videologo.png" alt="video"></div><a>女生称化浓妆坐地铁被要求原地卸妆：可能吓到他们了</a></h3>
+		<h3><div class="videologo"><img src="image/videologo.png" alt="video"></div><a>江西一14岁女孩欲跳楼 消防员凌空飞踹将其救下</a></h3>
+		<h3><div class="videologo"><img src="image/videologo.png" alt="video"></div><a>10岁男孩患白血病 40多家花店义卖多肉帮忙筹款</a></h3>
+	  </div>
+	</div>
+	<!--赛事结束-->
+	<!--焦点开始-->
+	<div class="jiaodian">
+	<a>视觉焦点</a>
+		<div class="jdhx"></div>
+		<div class="hthxc"></div>
+		<div class="jd1">
+			<div class="jdtext"><a>委内瑞拉停电刚恢复，炼油厂又炸了：如此多灾多难真是巧合？</a></div>
+		</div>
+		<div class="jd2">
+			<div class="jdtext"><a>为什么李云龙即便当不成团长，也要为和尚报仇？不仅因为义气</a></div>
+		</div>
+		<div class="jd3">
+			<div class="jdtext"><a>总觉得衣服不够穿？造型师只用12件衣物，挑战1月穿衣不重样</a></div>
+		</div>
+		<div class="jd4">
+			<div class="jdtext"><a>别怕，这些东西不是活的，她制作出“以假乱真”的羊毛玩偶</a></div>
+		</div>
+		<div class="jd5">
+			<div class="jdtext"><a>早安世界：iPhone为澳男子挡下弓箭 小学楼房倒塌百人被埋</a></div>
+		</div>
+		<div class="jd6">
+			<div class="jdtext"><a>委内瑞拉停电刚恢复，炼油厂又炸了：如此多灾多难真是巧合？</a></div>
+		</div>
+	</div>
+	<!--焦点结束-->
+	<!--科技开始-->
+	<div class="keji">
+	    <a>科技</a><div style="position: absolute;margin-top: -25px;margin-left: 80px;color: black"><a>科普</a></div>
+	    <div class="kjhx"></div>
+		<div class="ywhxc"></div>
+		<div class="kjtitle"><a>产品+</a><a>创投圈</a><a>AI行业精选</a><a>电脑管家</a></div>
+		<!--科技内容开始-->
+			<div class="kjbody">
+				<!--科技首图-->
+			<div class="kjgg1"></div>
+			<div class="kandian"><h3>Model Y现身冲击平价市场 但产能仍是特斯拉的最大挑战</h3></div>
+			<div class="cyw"><a>车云网&nbsp;&nbsp;17评</a></div>
+				<!--科技新闻列表-->
+			<h3>“5G＋4K”要来了：比4G快1.7倍 比高清清晰4倍</h3>
+			<h3>马云再出手，这次是370亿！医疗、教育行业的地震要来了</h3>
+			<h3>小米9销量火爆，现已无法供货，米粉们怒了！</h3>
+			<h3>你留在汽车之家的电话号码，5年被“卖”了96亿</h3>
+			<h3>《财富》深度专访：风暴下Facebook“换面”不“改头”</h3>
+				<!--科技右侧新闻-->
+			<div class="kjright">
+				<a>苹果印度重走高端路线：砍掉最便宜iPhone不再考虑小门店</a>
+				<div class="kjrhx"></div>
+				<div style="margin-top: 28px;">
+				<h3>马斯克晒了一张上海工厂的照片 称将生产Model 3和Y</h3>
+				<h3>HTC全年净利润121亿台币 低于分析师预估</h3>
+				<h3>我在望京，“都挺好”</h3>
+				<h3>新能源汽车投诉持续上升 每百辆约6辆被召回</h3>
+				<h3>深网丨刘强东的再造京东计划：三驾马车与吃苦文化</h3>
+				<h3>凌动智行控制权争夺战打响 接管人称向法院申请逮捕史文勇</h3>
+				</div>
+			</div>
+			</div>
+	</div>
+	<!--时尚新闻开始-->
+	<div class="fashion">
+	<a>时尚</a>
+		<div class="sshx"></div>
+		<div class="ywhxc"></div>
+		<div class="kjbody">
+		<div class="fsgg1"></div>
+		<div class="kandian"><h3>Model Y现身冲击平价市场 但产能仍是特斯拉的最大挑战</h3></div>
+		<div class="cyw"><a>VOGUE</a></div>
+		<h3>比起拥有“电影脸”，我更想和钟楚曦一样会穿</h3>
+		<h3>VOUGE美国版封面，巩俐没拿下，杨颖却上位，惹网友争议！</h3>
+		<h3>朴信惠的短发美上天！心动的感觉没错了</h3>
+		<h3>安吉丽娜朱莉脱下大衣，换上开衫，气质女神连选择都相似</h3>
+		<h3>又一个女星在网红滤镜下翻车了，漫画脸鼻祖也经不住啊</h3>
+		</div>
+	</div>
+	<!--底部广告-->
+	<div class="bgg"></div>
+	<!--底部文字开始-->
+	<div class="bottom">
+	<a>关于腾讯 | About Tencent | 服务协议 | 隐私政策 | 开放平台 | 商务洽谈 | 腾讯招聘 | 腾讯公益 | 客服中心 | 网站导航 | 客户端下载 | 版权所有</a><br />
+    <a>深圳举报中心 | 深圳公安局 | 抵制违法广告承诺书 | 版权保护投诉指引 | 广东省通管局</a><br />
+    <a>粤网文[2017]6138-1456号 新出网证（粤）字010号 网络视听许可证1904073号 增值电信业务经营许可证：粤B2-20090059 B2-20090028</a><br />
+    <a>新闻信息服务许可证 粤府新函[2001]87号 违法和不良信息举报电话：0755-83765566-9 粤公网安备 44030002000001号</a><br />
+    <a>互联网药品信息服务资格证书 （粤）—非营业性—2017-0153</a><br />
+    <a>Copyright 1998 - 2019 Tencent. All Rights Reserved</a>
+	</div>
+	<div class="btlogo"><img src="image/btlogo.png" alt="bt" width="670px"/></div>
+</div>
+</div>
+</body>
+</html>
