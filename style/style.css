@@ -517,12 +517,6 @@ color:rgba(255,255,255,1.00);
 	color:black;
 	font-size: 16px;
 }
-.xwhao{
-	padding: 2px;
-	color: rgba(0,38,102,1.00);
-	font-weight: 800;
-	font-size: 20px;
-}
 .saishibg{
 	height: 245px;
 	margin-top: 30px;
@@ -550,7 +544,7 @@ color:rgba(255,255,255,1.00);
 }
 .xwhao{
 	position: absolute;
-	width: 300px;
+	width: 240px;
 	height: 50px;
 	font-size: 20px;
 	margin-top: -25px;
@@ -715,7 +709,7 @@ color:rgba(255,255,255,1.00);
 }
 .fashion{
 	position: absolute;
-	width: 920px;
+	width: 420px;
 	height: 500px;
 	font-size: 20px;
 	cursor: pointer;
