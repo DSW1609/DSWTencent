@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>form</title>
+<link rel="stylesheet" type="text/css" href="style/form.css">
+<script src="js/form.js"></script>
+</head>
+<body onmouseover="yhzc()">
+	<div class="all">
+	  <div class="nr">
+		<span id = "yhzc"><div class="zzl" id="zzl"><a>用</a><br /><a>户</a></div>
+		<div class="zzr" id = "zzr"><a>注</a><br /><a>册</a></div></span>
+		<div class="formmh"></div>
+		<div class="form">
+		<form method="post" name="form" id="form" style="text-align: center;">
+		<div class="name"><a>姓名：</a><br /><div class="yz"><a id = "xmyza"></a></div>
+		<input type="text" placeholder="王嘉辉" id="te1" onMouseover="ted()" onMouseOut="teo()"><br /></div>
+		<div class="email"><a>邮箱：</a><br /><div class="yz"><a id = "yxyza"></a></div>
+		<input type="email" placeholder="DSW7296666@163.com" id="em1" onMouseover="em()" onMouseOut="emo()"><br /></div>
+		<div class="url"><a>网址：</a><br /><div  class="yz"><a id = "wzyza"></a></div>
+		<input type="url" placeholder="DSW1609.github.io" id="wz1" onMouseover="wz()" onMouseOut="wzo()"><br /></div>
+		<div class="num"><a>年龄：</a><br /><div  class="yz"><a id = "nlyza"></a></div>
+		<input type="number" placeholder="20" id="nl1" onMouseover="nl()" onMouseOut="nlo()"><br /></div>
+		<div class="range"><a id="gzl">工资：</a><a id="gz" style="margin-left: -10px;color: red">50000</a><br />
+		<input type="range" placeholder="工资" id="gz1" min="0" step="10" max="100000" oninput="change()" onchange="change()"><br /></div>
+		<div class="qt"><textarea placeholder="其他" id="qt1" onMouseover="qt()" onMouseOut="qto()"></textarea><br /></div>
+		<div class="sub"><input type="submit" id="tj1" value="提交" onMouseover="tj()" onMouseOut="tjo()" onClick="tjcg()"></div>
+		</form>
+				</div> 
+			</div>
+		</div>
+</body>
+</html>

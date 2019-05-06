@@ -1,29 +1,41 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
-<html>
-<head>  
-<title>我的第一个 HTML 页面</title>  
-<style type="text/css">  
-.v{border: 1px solid black;margin:0 auto;width:100px;height:100px;overflow:hidden;}  
-</style>  
-<script type="text/javascript">  
-function init(){  
-    //alert(9)  
-    var t = setInterval(function(){  
-       var v = document.getElementById('v');  
-       if(v.offsetWidth > 50){vv.style.width = v.offsetWidth - 10;}  
-       else{clearInterval(t);}  
-    },500);  
-}  
-   
-</script>  
-</head>  
-   
-<body onload="init()">  
-<div style="background-color:#ccc;width:400px;">  
-<div id="v"  class="v">  
-<p>body 元素的内容会显示在浏览器中。</p>  
-<p>title 元素的内容会显示在浏览器的标题栏中。</p>  
-</div>  
-</div>  
-</body>  
-</html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <style type="text/css">
+    #apDiv2 {
+        position:absolute;
+        width:200px;
+        height:115px;
+        z-index:2;
+        left: 690px;
+        top: 120px;
+        background-color: #FF0000;
+        display:none;
+    }
+  </style>
+ 
+<script type="text/javascript">
+$(function(){
+    $("#btn1").click(function(){
+        $("#apDiv2").show("slide", { direction: "right" }, 1000);
+    })
+ 
+    $("#btn2").click(function(){
+        $("#apDiv2").hide("slide", { direction: "left" }, 1000);
+    })
+})
+</script>
+ </HEAD>
+ 
+ <BODY>
+  <div id="apDiv2">
+  asdasdsa<br>
+  asdasdsa<br>
+  asdasdsa<br>
+ </div>
+ <input type="button" id="btn1" value="展开"/><input type="button" id="btn2" value="收回"/>
+ </BODY>
+</HTML>

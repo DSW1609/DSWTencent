@@ -401,7 +401,7 @@ body{
 .zh1:hover,.zh2:hover,.zh3:hover,.zh4:hover{
 	color:rgba(255,255,255,1.00);
 	background:rgba(29,87,255,1.00);
-    transition: all     0.01s linear;
+    transition: all 0.1s linear;
 }
 .djgs{
 	position: absolute;
