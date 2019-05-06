@@ -7,6 +7,8 @@
 <script src="js/jquery-1.8.3.min.js"></script>
 <title>腾讯首页</title>
 <script type="text/javascript">
+var myDate = new Date();//获取系统当前时间
+	
 function reloadPage(){//刷新  
   window.location.reload();
   }
@@ -73,6 +75,10 @@ function def(){//鼠标移出恢复
 <div class="nr" onMouseOut="def()">
 	<!--logodiv-->
 	<div class="logo" onclick="location.href='index.html'"><img src="image/qq_logo_2x.png" alt="腾讯网" width="131px;"></div>
+	<!--logo结束-->
+	<!--右侧节气开始-->
+	<div class="jq"><img src="image/Qshou2019lixia.png" width="420px;" alt="jq"></div>
+	<!--右侧节气结束-->
 	<!--导航右侧触碰按钮-->
 	<div class="bs"><input type="button" onMouseover="bs2()"></div>
 	<div class="bs2"><input type="button" onMouseover="bs()"></div>
@@ -288,7 +294,7 @@ function def(){//鼠标移出恢复
 	<a>热门赛事</a>
 		<div class="sshx"></div>
 		<div class="hthxc"></div>
-		<div class="time"><a>3月18日&nbsp;|&nbsp;</a></div>
+		<div class="time"><a><script>myDate.getMonth();</script>5月6日&nbsp;|&nbsp;</a></div>
 		<div class="xwhao"><a>下午好，今天有53场热门比赛</a><a style="color: rgba(20,121,215,1.00);font-size: 15px;letter-spacing: -3px;">&gt;&gt;</a></div>
 		<div class="saishibg"><img src="image/saishi.png" alt="saishi" width="440" style="border-radius: 5px;"></div>
 		<!--赛事新闻视频列表-->
