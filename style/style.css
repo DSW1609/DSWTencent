@@ -147,7 +147,7 @@ color:rgba(255,255,255,1.00);
 	color:rgba(111,175,232,1.00);
 	margin-left:1360px;
 	}
-.nav{
+.nav,.nav2,.nav3{
 	position: absolute;
 	margin-top: 72px;
 	width: 1400px;
@@ -159,25 +159,9 @@ color:rgba(255,255,255,1.00);
 	background: rgba(0,82,217,1.00);
 }
 .nav2{
-	position: absolute;
-	margin-top: 72px;
-	width: 1400px;
-	height: 50px;
-	border-radius: 5px;
-	word-spacing: 1.3em;
-	text-align: center;
-	line-height: 50px;
 	background:#444693;
 }
 .nav3{
-	position: absolute;
-	margin-top: 72px;
-	width: 1400px;
-	height: 50px;
-	border-radius: 5px;
-	word-spacing: 1.3em;
-	text-align: center;
-	line-height: 50px;
 	background:rgba(255,0,103,1.00);
 }
 .nav li,.nav2 li,.nav3 li{
@@ -190,10 +174,8 @@ color:rgba(255,255,255,1.00);
 .nav ul,.nav2 ul,.nav3 ul{
 	margin: 0;
 	padding: 0;
-    list-style-type: none;
 }
 .nav a ,.nav2 a,.nav3 a{
-    display: block;
     text-align: center;
     text-decoration: none;
     color: aliceblue;
@@ -209,16 +191,7 @@ color:rgba(255,255,255,1.00);
 .nav3 a:hover{
 	background:rgba(255,155,195,1.00);
 }
-.yaowen h2:hover{
-	color:rgba(0,82,217,1.00);
-}
-.yaowen h3:hover{
-	color:rgba(0,82,217,1.00);
-}
-.huati h2:hover{
-	color:rgba(0,82,217,1.00);
-}
-.huati h3:hover{
+.yaowen h2:hover,.yaowen h3:hover,.huati h2:hover,.huati h3:hover{
 	color:rgba(0,82,217,1.00);
 }
 .gg1{
@@ -334,6 +307,7 @@ color:rgba(255,255,255,1.00);
 	font-size: 20px;
 	color:#1479dd;
 	cursor: pointer;
+	z-index: 996;
 	margin-top: 250px;
 	margin-left: 470px;
 }
@@ -346,25 +320,76 @@ color:rgba(255,255,255,1.00);
 }
 .qitanav{
 	position: absolute;
-	width: 440px;
+	width: 445px;
 	height: 160px;
 	cursor: pointer;
 	margin-top: 250px;
 	margin-left: 960px;
+	z-index: 999;
 }
-.qitanavbig{
-	position: absolute;
-	width: 840px;
-	height: 160px;
+.qitanav2{
+	position:relative;
+	float: right;
+	width: 430px;
+	height: 170px;
 	cursor: pointer;
-	margin-top: 250px;
-	margin-left: 550px;
+	top: 250px;
+	left: -439px;
+	z-index: 999;
+	display: none;
+}
+.mask{
+	float: right;
+	width: 430px;
+	height: 170px;
+	animation:animate 1.5s alternate;
+	overflow: hidden;
+    }
+.mask2{
+	float: right;
+	width: 430px;
+	height: 170px;
+	animation:animate2 1.5s alternate;
+	overflow: hidden;
+    }
+@keyframes animate{
+    from {
+		width: 0px;
+    }
+    to {
+		width: 430px;
+    }
+}
+@keyframes animate2{
+    from {
+		width: 430px;
+    }
+    to {
+		width: 0px;
+    }
 }
 .qtjt{
-	position: absolute;
-	width: 30px;
-	height: 40px;
-	margin-left: -20px;
+	position:absolute;
+	width: 12px;
+	height: 20px;
+	margin-top: 2px;
+	animation: qtjt 1.5s infinite;
+}
+.qtjtright{
+	position:absolute;
+	width: 12px;
+	height: 20px;
+	padding: 5px;
+	background: rgba(227,238,255,1.00);
+	animation: qtjt 1.5s infinite;
+}
+@keyframes qtjt{
+	0%,50%{
+		margin-left: -16px;
+	}
+	50%,100%{
+		margin-left: -13px;
+	}
 }
 .qtnavlogo{
 	position: absolute;
@@ -375,135 +400,69 @@ color:rgba(255,255,255,1.00);
 	margin-top: 5px;
 	background-image: url(../image/icons.png);
 }
-.qtnavlogobig{
-	position: absolute;
-	width: 22px;
-	height: 155px;
-	z-index: 999;
-	margin-left: 824px;
-	margin-top: 5px;
-	background-image: url(../image/icons.png);
-}
-.qt1{
+.qt1,.qt2,.qt3,.qt4{
 	position: absolute;
 	width: 440px;
 	height: 40px;
 	word-spacing:4px;
 	text-align:left;
 	line-height: 40px;
-	background:rgba(255,255,255,1.00);
 	border: 1px solid rgba(180,208,255,1.00);
 }
-.qt1big{
-	position: absolute;
-	width: 850px;
+.qt12,.qt22,.qt32,.qt42{
+	position:relative;
+	float: right;
+	width: 420px;
 	height: 40px;
 	word-spacing:4px;
 	text-align:left;
 	line-height: 40px;
-	background:rgba(255,255,255,1.00);
 	border: 1px solid rgba(180,208,255,1.00);
+	border-right: none;
+}
+.qt1,.qt12{
+	background:rgba(255,255,255,1.00);
 }
 .qt2{
-	position: absolute;
-	width: 440px;
-	height: 40px;
-	text-align:left;
-	line-height: 40px;
 	margin-top: 40px;
 	background: rgba(227,238,255,1.00);
-	border: 1px  solid rgba(180,208,255,1.00);
 }
-.qt2big{
-	position: absolute;
-	width: 850px;
-	height: 40px;
-	text-align:left;
-	line-height: 40px;
-	margin-top: 40px;
+.qt22{
+	top:-1px;
 	background: rgba(227,238,255,1.00);
-	border: 1px  solid rgba(180,208,255,1.00);
 }
 .qt3{
-	position: absolute;
-	width: 440px;
-	height: 40px;
-	word-spacing:5px;
-	text-align:left;
-	line-height: 40px;
 	margin-top: 81px;
 	background:rgba(255,255,255,1.00);
-	border: 1px solid rgba(180,208,255,1.00);
 }
-.qt3big{
-	position: absolute;
-	width: 850px;
-	height: 40px;
-	word-spacing:5px;
-	text-align:left;
-	line-height: 40px;
-	margin-top: 81px;
+.qt32{
+	top:-2px;
 	background:rgba(255,255,255,1.00);
-	border: 1px solid rgba(180,208,255,1.00);
 }
 .qt4{
-	position: absolute;
-	width: 440px;
-	height: 40px;
-	text-align:left;
-	line-height: 40px;
 	margin-top: 120px;
 	background: rgba(227,238,255,1.00);
-	border: 1px  solid rgba(180,208,255,1.00);
 }
-.qt4big{
-	position: absolute;
-	width: 850px;
-	height: 40px;
-	word-spacing:3px;
-	text-align:left;
-	line-height: 40px;
-	margin-top: 120px;
+.qt42{
+	top:-4.5px;
 	background: rgba(227,238,255,1.00);
-	border: 1px solid rgba(180,208,255,1.00);
 }
-.qt4 a,.qt4big a{
+.qt4 a{
 	background: rgba(193,217,255,1.00);
 	padding:3px 10px;
 	border-radius: 10px;
 	color:rgba(255,255,255,1.00);
 }
-.qitanav li:hover{
+.qitanav li:hover,.qitanav2 li:hover{
     color:rgba(0,82,217,1.00);
 }
-.qitanav a:hover{
-    color:rgba(0,82,217,1.00);
-}
-.qitanavbig li:hover{
-    color:rgba(0,82,217,1.00);
-}
-.qitanavbig a:hover{
-    color:rgba(0,82,217,1.00);
-}
-
-.qitanav li{
+.qitanav li,.qitanav2 li{
 	display: inline-block;
 	text-decoration: none;
 	font-size: 14px;
 	margin:0 5px;
 }
-.qitanav ul{
-	margin: 0;
-	padding: 0;
-    list-style-type: none;
-}
-.qitanavbig li{
-	display: inline-block;
-	text-decoration: none;
-	font-size: 14px;
-	margin:0 4.5px;
-}
-.qitanavbig ul{
+.qitanav ul,.qitanav2 ul{
 	margin: 0;
 	padding: 0;
     list-style-type: none;
@@ -518,10 +477,7 @@ color:rgba(255,255,255,1.00);
 	margin-left: 960px;
 	cursor: pointer;
 }
-.saishi a:hover{
-	color:rgba(0,82,217,1.00);
-}
-.saishi h3:hover{
+.saishi a:hover,.saishi h3:hover{
 	color:rgba(0,82,217,1.00);
 }
 .saishi h3{
@@ -586,63 +542,40 @@ color:rgba(255,255,255,1.00);
 	margin-top: 10px;
 	background:rgba(120,171,255,1.00);
 }
-.jd1{
-	position: absolute;
-	width: 210px;
-	height: 118px;
-	margin-top:30px;
-	border-radius: 5px;
-	background-image: url(../image/jd1.png);
-}
 .jdtext{
 	position: absolute;
 	margin-top: 130px;
 	color: black;
 	font-size: 15px;
 }
-.jd2{
+.jd1,.jd2,.jd3,.jd4,.jd5,.jd6{
 	position: absolute;
 	width: 210px;
 	height: 118px;
 	margin-top:30px;
-	margin-left: 238px;
 	border-radius: 5px;
+}
+.jd1,.jd2,.jd3,.jd4,.jd5,.jd6{
+	background-image: url(../image/jd1.png);
+}
+.jd2{
+	margin-left: 238px;
 	background-image: url(../image/jd2.png);
 }
 .jd3{
-	position: absolute;
-	width: 210px;
-	height: 118px;
-	margin-top:30px;
 	margin-left: 476px;
-	border-radius: 5px;
 	background-image: url(../image/jd3.png);
 }
 .jd4{
-	position: absolute;
-	width: 210px;
-	height: 118px;
-	margin-top:30px;
 	margin-left: 714px;
-	border-radius: 5px;
 	background-image: url(../image/jd4.png);
 }
 .jd5{
-	position: absolute;
-	width: 210px;
-	height: 118px;
-	margin-top:30px;
 	margin-left: 952px;
-	border-radius: 5px;
 	background-image: url(../image/jd5.png);
 }
 .jd6{
-	position: absolute;
-	width: 210px;
-	height: 118px;
-	margin-top:30px;
 	margin-left: 1190px;
-	border-radius: 5px;
 	background-image: url(../image/jd6.png);
 }
 .keji{
