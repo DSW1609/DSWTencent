@@ -28,35 +28,7 @@ function bs3(){
 	var bs3= document.getElementById("bs2");
 	bs3.className="nav3";
 }//变色代码结束
-function big(){//右侧其他导航栏变换class
-	var qtbig= document.getElementById("qtbig");
-	qtbig.className="qitanavbig";
-	var qtlogo= document.getElementById("qtlogobig");
-	qtlogo.className="qtnavlogobig";
-	var qt1big= document.getElementById("qt1big");
-	qt1big.className="qt1big";
-	var qt2big= document.getElementById("qt2big");
-	qt2big.className="qt2big";
-	var qt3big= document.getElementById("qt3big");
-	qt3big.className="qt3big";
-	var qt4big= document.getElementById("qt4big");
-	qt4big.className="qt4big";
-}//结束
-function def(){//鼠标移出恢复
-	var defqt= document.getElementById("qtbig");
-	defqt.className="qitanav";
-	var qtlogo= document.getElementById("qtlogobig");
-	qtlogo.className="qtnavlogo";
-	var qt1big= document.getElementById("qt1big");
-	qt1big.className="qt1";
-	var qt2big= document.getElementById("qt2big");
-	qt2big.className="qt2";
-	var qt3big= document.getElementById("qt3big");
-	qt3big.className="qt3";
-	var qt4big= document.getElementById("qt4big");
-	qt4big.className="qt4";
-	}
-		//滑动出现右侧快捷按钮
+//滑动出现右侧快捷按钮
  $(function () {  //绑定滚动条事件          
      $(window).bind("scroll", function () {//绑定滚动条事件 
         var sTop = $(window).scrollTop();
@@ -68,11 +40,27 @@ function def(){//鼠标移出恢复
 		} 
   });
 })
+function qtjt(){
+	var qtjt = document.getElementById('qtnav2');
+	qtjt.style.display="block";
+	var qtjt2 = document.getElementById('mask');
+	qtjt2.className="mask";
+	var qtjtright = document.getElementById('qtjtright');
+	qtjtright.style.display="block";
+}
+function qtjtright(){
+	var qtjt2 = document.getElementById('mask');
+	qtjt2.className="mask2";
+	var qtjt = document.getElementById('qtnav2');
+	setTimeout(function(){qtjt.style.display="none";},"1500");
+	var qtjtright = document.getElementById('qtjtright');
+	setTimeout(function(){qtjtright.style.display="none";},"1300");
+}
 </script>
 </head>
 <body>
 <div class="all">
-<div class="nr" onMouseOut="def()">
+<div class="nr">
 	<!--logodiv-->
 	<div class="logo" onclick="location.href='index.html'"><img src="image/qq_logo_2x.png" alt="腾讯网" width="131px;"></div>
 	<!--logo结束-->
@@ -150,11 +138,11 @@ function def(){//鼠标移出恢复
 		<div class="tqimg"></div>
 		<div class="wendu"><a>15℃</a></div>
 	<div class="ywbody">
-		<h2>习近平殷殷深情寄八闽</h2>
-		<h3>习近平参加福建代表团审议时的重要讲话产生热烈反响</h3>
-		<h3>为创新创业创造厚植土壤 在推进高质量发展中创造广阔空间</h3>
-		<h3>政协十三届二次会议举行第三次全体会议 <a>两会专题</a></h3>
-		<h3>既是“促进法”也是“保护法” 坚持问题导向 敢于动真碰硬</h3>
+		<h2>习近平对公安队伍的这些话激荡人心</h2>
+		<h3>人民日报头版头条：我国企业发展活力充沛</h3>
+		<h3>关键之处见从容 中国经济：韧性十足 潜力巨大 <a>学习强国</a></h3>
+		<h3>“大数据”应用让生产生活更智能 <a>专题</a></h3>
+		<h3>除了奇花异草，世园会还看啥？<a>世园会</a></h3>
 		<h3>九大亮点重温国企改革发展记者会！ <a>部长发声</a> <a>代表委员</a></h3>
 		<h3>“这是一条互利共赢的路” <a>学习强国</a> </h3>
 		<h3>构建新时期和谐的水生态环境</h3>
@@ -207,8 +195,8 @@ function def(){//鼠标移出恢复
     </div>
 	<!--话题结束-->
 	<!--右侧变换其他导航栏开始-->
-	<div class="qitanav" id="qtbig" onMouseOver="big()">
-	  <div class="qtjt">🐴</div>
+	<div class="qitanav">
+	<div class="qtjt" onClick="qtjt()"><img src="image/left.png" width="12px;" alt="jt" id="qtjt"></div>
 	  <div class="qtnavlogo" id="qtlogobig"></div>
 		<div class="qt1">
 		<ul>
@@ -218,27 +206,10 @@ function def(){//鼠标移出恢复
 			<li>快报</li>
 			<li>视频</li>
 			<li>浏览器</li>
-			</ul>
-		</div>
-		<div class="qt1" id="qt1big">
-		<ul>
-			<li>新闻APP</li>
-			<li>体育APP</li>
-			<li>企鹅号</li>
-			<li>快报</li>
-			<li>视频</li>
-			<li>浏览器</li>
 			<li>微视</li>
-			<li>享看</li>
-			<li>体育APP</li>
-			<li>QQ拼音</li>
-			<li>QQ影音</li>
-			<li>QQ影像</li>
-			<li>微云</li>
-			<li>文档</li>
 			</ul>
 		</div>
-		<div class="qt2" id="qt2big">
+		<div class="qt2">
 		  <ul>
 			<li>微信</li>
 			<li>QQ</li>
@@ -246,18 +217,11 @@ function def(){//鼠标移出恢复
 			<li>企业微信</li>
 			<li>邮箱</li>
 			<li>腾讯云</li>
-			<li>电脑管家</li>
+			<li>管家</li>
 			<li>会员</li>
-			<li>微视</li>
-			<li>QQ阅读</li>
-			<li>QQ音乐</li>
-			<li>全民K歌</li>
-			<li>手机空间</li>
-			<li>手机QQ</li>
-			<li>手游宝</li>
 			</ul>
 		</div>
-		<div class="qt3" id="qt3big">
+		<div class="qt3">
 		 <ul>
 			<li>LOL</li>
 			<li>DNF</li>
@@ -267,16 +231,9 @@ function def(){//鼠标移出恢复
 			<li>天刀</li>
 			<li>爱玩</li>
 			<li>冒险岛2</li>
-			<li>QQ飞车</li>
-			<li>英雄</li>
-			<li>龙之谷</li>
-			<li>FIFA</li>
-			<li>魂斗罗</li>
-			<li>CF手游</li>
-			<li>天龙手游</li>
 			</ul>
 		</div>
-			<div class="qt4" id="qt4big">
+			<div class="qt4">
 		<ul>
 			<li>星钻</li>
 			<li>QQ彩票</li>
@@ -287,6 +244,56 @@ function def(){//鼠标移出恢复
 			<li><a>全部</a></li>
 			</ul>
 		</div>
+	</div>
+	<div class="qitanav2" id = "qtnav2">
+		<div class="mask" id="mask">
+		<div class="qtjtright" onClick="qtjtright()"><img src="image/rightjt.png" width="12px;" alt="jt" id="qtjtright"></div>
+		<div class="qt12">
+		<ul>
+			<li>享看</li>
+			<li>体育APP</li>
+			<li>QQ拼音</li>
+			<li>QQ影音</li>
+			<li>QQ影像</li>
+			<li>微云</li>
+			<li>文档</li>
+			</ul>
+		</div>
+		<div class="qt22">
+		  <ul>
+			<li>微视</li>
+			<li>QQ阅读</li>
+			<li>QQ音乐</li>
+			<li>全民K歌</li>
+			<li>手机空间</li>
+			<li>手机</li>
+			<li>手游</li>
+			</ul>
+		</div>
+		<div class="qt32">
+		 <ul>
+			<li>QQ飞车</li>
+			<li>英雄</li>
+			<li>龙之谷</li>
+			<li>FIFA</li>
+			<li>魂斗罗</li>
+			<li>CF手游</li>
+			<li>天龙手游</li>
+			</ul>
+		</div>
+			<div class="qt42">
+		<ul>
+			<li>星钻</li>
+			<li>QQ彩票</li>
+			<li>彩贝</li>
+			<li>时光画轴</li>
+			<li>天气</li>
+			<li>和平精英</li>
+			<li>用户</li>
+			<li>彩贝</li>
+		</ul>
+		</div>
+	</div>
 	</div>
 	<!--其他导航栏结束-->
 	<!--赛事开始-->
