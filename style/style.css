@@ -302,7 +302,8 @@ color:rgba(255,255,255,1.00);
 	color:#1479dd;
 	cursor: pointer;
 	z-index: 996;
-	margin-top: 250px;
+	padding-top: 30px;
+	margin-top: 220px;
 	margin-left: 470px;
 }
 .hthxc{
@@ -402,11 +403,11 @@ color:rgba(255,255,255,1.00);
 }
 .qt2{
 	margin-top: 40px;
-	background: rgba(227,238,255,1.00);
+	background: rgba(245, 248, 252,1.00);
 }
 .qt22{
 	top:-1px;
-	background: rgba(227,238,255,1.00);
+	background: rgba(245, 248, 252,1.00);
 }
 .qt3{
 	margin-top: 81px;
@@ -418,11 +419,11 @@ color:rgba(255,255,255,1.00);
 }
 .qt4{
 	margin-top: 120px;
-	background: rgba(227,238,255,1.00);
+	background: rgba(245, 248, 252,1.00);
 }
 .qt42{
 	top:-4.5px;
-	background: rgba(227,238,255,1.00);
+	background: rgba(245, 248, 252,1.00);
 }
 .qt4 a{
 	background: rgba(193,217,255,1.00);
@@ -454,6 +455,15 @@ color:rgba(255,255,255,1.00);
 	margin-top: 430px;
 	margin-left: 960px;
 	cursor: pointer;
+}
+#ssvideo{
+	position: absolute;
+	color: white;
+	width:auto;
+	height:auto;
+	margin-left: 10px;
+	margin-top: 200px;
+	background:rgba(0,0,0,0.50)
 }
 .saishi a:hover,.saishi h3:hover{
 	color:rgba(0,82,217,1.00);
@@ -496,6 +506,13 @@ color:rgba(255,255,255,1.00);
 	margin-top: -25px;
 	margin-left: 220px;
 }
+#gt{
+	color: rgba(116, 166, 224,1.00);
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: 5px;
+	letter-spacing: -5px;
+}
 .xwhao a{
 	color:rgba(81,81,81,1.00);
 	font-weight: 500;
@@ -533,7 +550,7 @@ color:rgba(255,255,255,1.00);
 	margin-top:30px;
 	border-radius: 5px;
 }
-.jd1,.jd2,.jd3,.jd4,.jd5,.jd6{
+.jd1{
 	background-image: url(../image/jd1.png);
 }
 .jd2{

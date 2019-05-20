@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<!--<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">-->
+<link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico" />
 <link rel="stylesheet" type="text/css" href="style/style.css">
 <script src="js/jquery-1.8.3.min.js"></script>
 <title>腾讯首页</title>
@@ -15,8 +16,17 @@ try {//转到手机版首页
   }
 } catch (e) {}
 var myDate = new Date();//获取系统当前时间
-	var yf = myDate.getMonth()+1; //获取月份
+	var yf = myDate.getMonth()+1;//获取月份
 	var sj = myDate.getDate();//获取日期
+	var h = myDate.getHours();//获取小时
+	var s = '';
+	if(h<12){//根据小时判断是上午还是下午还是晚上
+		s = '上午';
+	}else if(h<18){
+		s = '下午';
+	}else{
+		s = '晚上';
+	}
 function reloadPage(){//刷新  
   window.location.reload();
   }
@@ -77,6 +87,23 @@ function jtlefto(){
 	var jtlefto = document.getElementById('qtjt');
 	jtlefto.src = "image/left.png";
 }
+//右侧快捷按钮-反馈
+function fankui(){
+	var fankui = document.getElementById('fankui');
+	fankui.src = "image/fankuihover.png";
+}
+function fankuio(){
+	var fankuio = document.getElementById('fankui');
+	fankuio.src = "image/fankui.png";
+}//右侧快捷按钮-向上
+function topx(){
+	var topx = document.getElementById('topx');
+	topx.src = "image/tophover.png";
+}
+function topo(){
+	var topo = document.getElementById('topx');
+	topo.src = "image/top.png";
+}
 //触碰箭头事件结束
 </script>
 </head>
@@ -87,7 +114,7 @@ function jtlefto(){
 	<div class="logo" onclick="location.href='index.html'"><img src="image/qq_logo_2x.png" alt="腾讯网" width="131px;"></div>
 	<!--logo结束-->
 	<!--右侧节气开始-->
-	<div class="jq"><img src="image/Qshou2019lixia.png" width="420px;" alt="jq"></div>
+	<div class="jq"><img src="image/xiaoman2019Qshou.png" width="420px;" alt="jq"></div>
 	<!--右侧节气结束-->
 	<!--导航右侧触碰按钮-->
 	<div class="bs"><input type="button" onMouseover="bs2()"></div>
@@ -135,9 +162,12 @@ function jtlefto(){
 	</div>
 	<!-- 右侧浮动导航栏-->
 	<div class="kjbutton" id="kjbt">
-		<div class="sx"><button value="刷新" onClick="reloadPage()">刷新</button></div>
-		<div class="fk">反馈</div>
-		<div class="top"><button onClick="topFunction()" id="myBtn"><img src="image/top.png" alt="top" width="25px;"></button></div>
+		<!--刷新-->
+		<div class="sx"><img src = "image/shuaxin.PNG" onClick="reloadPage()" width="60px" alt="shuaxin" id= "shuaxin"></div>
+		<!--反馈-->
+		<div class="fk"><a href="https://support.qq.com/products/4312" target="_blank"><img src = "image/fankui.PNG" width="60px" alt="fankui" onMouseOver="fankui()" onMouseOut="fankuio()" id = "fankui"></a></div>
+		<!--向上-->
+		<div class="top"><img src="image/top.png" alt="top" width="60px;" onClick="topFunction()" onMouseOver="topx()" onMouseOut="topo()" id = "topx"></div>
 	</div>
 	<!--导航下滚动广告-->
 	<div class="gg1">
@@ -183,11 +213,11 @@ function jtlefto(){
 	</div>
 	<!--要闻结束-->
 	<!--话题开始-->
-	<div class="huati">
+	<div class="huati" onMouseover="qtjtright()">
 	 <a>今日话题</a>
 		<div class="ywhx"></div>
 		<div class="hthxc"></div>
-	  <div class="htbody">
+	    <div class="htbody">
 		<h2>每月一次小长假，还是隔周休三天？都不重要</h2>
 		<h3><a>半月谈网&nbsp;</a>| 短缺、涨价、停产 ?廉价常用药哪儿去了 </h3>
 		<h3><a>中青评论&nbsp;</a>| 夸夸群风靡高校，无厘头娱乐折射出真实情感需求</h3>
@@ -268,8 +298,8 @@ function jtlefto(){
 		</div>
 	</div>
 	<div class="qitanav2" id = "qtnav2">
-		<div class="mask" id="mask">
-		<div class="qtjtright" onClick="qtjtright()"><img src="image/rightjt.png" width="15px;" height="41px;" alt="jt" id="qtjtright"></div>
+		<div class="mask" id = "mask">
+		<div class="qtjtright" onMouseover="qtjtright()"><img src="image/rightjt.png" width="15px;" height="41px;" alt="jt" id="qtjtright"></div>
 		<div class="qt12">
 		<ul>
 			<li>享看</li>
@@ -322,9 +352,14 @@ function jtlefto(){
 	<a>热门赛事</a>
 		<div class="sshx"></div>
 		<div class="hthxc"></div>
+		<!--右侧时间开始-->
 		<div class="time"><a><script>document.write(yf);</script>月<script>document.write(sj);</script>日&nbsp;|&nbsp;</a></div>
-		<div class="xwhao" onload="load()"><a id = "xwhao">上午好，今天有53场热门比赛"</a><a style="color: rgba(20,121,215,1.00);font-size: 15px;letter-spacing: -3px;">&gt;&gt;</a></div>
-		<div class="saishibg"><img src="image/saishi.png" alt="saishi" width="440" style="border-radius: 5px;"></div>
+		<!--时间结束-->
+		<!--右侧提示开始-->
+		<div class="xwhao"><a><script>document.write(s)</script>好，今天有53场热门比赛</a><a id = "gt">&gt;&gt;</a></div>
+		<!--提示结束-->
+		<div class="saishibg"><a href="https://v.qq.com/x/cover/hdgif2mr1twhte5/l07067ftypa.html" target="_blank"><img src="image/saishi.png" alt="saishi" width="440" style="border-radius: 5px;"></a></div>
+<!--		<div class="saishibg"><a id = "ssvideo">就问你服不服 哈登后撤一步三分迎射对手</a><embed src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=m0022gj3qfk&auto=0" allowFullScreen="true" quality="high" width="440" height="245" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"><embed></div>-->
 		<!--赛事新闻视频列表-->
 		<div class="sslist">
 		<h3><div class="videologo"><img src="image/videologo.png" alt="video"></div><a>莱昂纳德25分猛龙双杀湖人 詹姆斯29分6助攻</a></h3>
@@ -410,7 +445,6 @@ function jtlefto(){
 		<h3>VOUGE美国版封面，巩俐没拿下，杨颖却上位，惹网友争议！</h3>
 		<h3>朴信惠的短发美上天！心动的感觉没错了</h3>
 		<h3>安吉丽娜朱莉脱下大衣，换上开衫，气质女神连选择都相似</h3>
-		<h3>又一个女星在网红滤镜下翻车了，漫画脸鼻祖也经不住啊</h3>
 		</div>
 	</div>
 	<!--底部广告-->
