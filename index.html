@@ -2,19 +2,27 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><!--加入titlelogo无效...-->
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="style/style.css">
 <script src="js/jquery-1.8.3.min.js"></script>
 <title>腾讯首页</title>
+<meta content="资讯,新闻,财经,房产,视频,NBA,科技,腾讯网,腾讯,QQ,Tencent" name="Keywords">
+<meta name="description" content="腾讯网从2003年创立至今，已经成为集新闻信息，区域垂直生活服务、社会化媒体资讯和产品为一体的互联网媒体平台。腾讯网下设新闻、科技、财经、娱乐、体育、汽车、时尚等多个频道，充分满足用户对不同类型资讯的需求。同时专注不同领域内容，打造精品栏目，并顺应技术发展趋势，推出网络直播等创新形式，改变了用户获取资讯的方式和习惯。" />
 <script type="text/javascript">
+try {//转到手机版首页
+  if (location.search.indexOf('?pc') !== 0 && /Android|Windows Phone|iPhone|iPod/i.test(navigator.userAgent)) {
+      window.location.href = 'https://xw.qq.com?f=qqcom';
+  }
+} catch (e) {}
 var myDate = new Date();//获取系统当前时间
-	
+	var yf = myDate.getMonth()+1; //获取月份
+	var sj = myDate.getDate();//获取日期
 function reloadPage(){//刷新  
   window.location.reload();
   }
 function topFunction() {//回到顶部
-   document.body.scrollTop = 0;
-   document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 function bs2(){//变色代码-3(控制类名)
 	var bs2 = document.getElementById("bs2");
@@ -28,7 +36,7 @@ function bs3(){
 	var bs3= document.getElementById("bs2");
 	bs3.className="nav3";
 }//变色代码结束
-//滑动出现右侧快捷按钮
+//往下滑动出现右侧快捷按钮
  $(function () {  //绑定滚动条事件          
      $(window).bind("scroll", function () {//绑定滚动条事件 
         var sTop = $(window).scrollTop();
@@ -40,22 +48,36 @@ function bs3(){
 		} 
   });
 })
+//右侧快捷按钮结束
+//点击箭头出现向左延伸导航栏
 function qtjt(){
 	var qtjt = document.getElementById('qtnav2');
 	qtjt.style.display="block";
 	var qtjt2 = document.getElementById('mask');
-	qtjt2.className="mask";
+	qtjt2.style.animation = "animate 0.6s alternate";
 	var qtjtright = document.getElementById('qtjtright');
 	qtjtright.style.display="block";
 }
+//点击箭头延伸导航栏向右消失
 function qtjtright(){
 	var qtjt2 = document.getElementById('mask');
-	qtjt2.className="mask2";
+	qtjt2.style.animation = "animate2 0.6s alternate";
 	var qtjt = document.getElementById('qtnav2');
-	setTimeout(function(){qtjt.style.display="none";},"1500");
+	setTimeout(function(){qtjt.style.display="none";},"600");
 	var qtjtright = document.getElementById('qtjtright');
-	setTimeout(function(){qtjtright.style.display="none";},"1300");
+	setTimeout(function(){qtjtright.style.display="none";},"300");
 }
+//延伸导航栏结束
+//触碰箭头事件开始(触碰变色)
+function jtleft(){
+	var jtleft = document.getElementById('qtjt');
+	jtleft.src = "image/lefthover.png";
+}
+function jtlefto(){
+	var jtlefto = document.getElementById('qtjt');
+	jtlefto.src = "image/left.png";
+}
+//触碰箭头事件结束
 </script>
 </head>
 <body>
@@ -128,7 +150,7 @@ function qtjtright(){
 	</div>
 	<!--滚动广告结束-->
 	<!--右侧腾讯110广告-->
-	<div class="lbgg1" onclick="location.href='tx110.html'" id="gg"></div>
+	<div class="lbgg1" onclick="location.href='tx110.html'" id="gg1"></div>
 	<!--要闻开始-->
 	<div class="yaowen">
 	    <a>要闻</a>
@@ -196,7 +218,7 @@ function qtjtright(){
 	<!--话题结束-->
 	<!--右侧变换其他导航栏开始-->
 	<div class="qitanav">
-	<div class="qtjt" onClick="qtjt()"><img src="image/left.png" width="12px;" alt="jt" id="qtjt"></div>
+	<div class="qtjt" onClick="qtjt()" onMouseOver="jtleft()" onMouseOut="jtlefto()"><img src="image/left.png" width="15px;" height="41px;" alt="jt" id="qtjt"></div>
 	  <div class="qtnavlogo" id="qtlogobig"></div>
 		<div class="qt1">
 		<ul>
@@ -236,7 +258,7 @@ function qtjtright(){
 			<div class="qt4">
 		<ul>
 			<li>星钻</li>
-			<li>QQ彩票</li>
+			<li>腾讯地图</li>
 			<li>彩贝</li>
 			<li>时光画轴</li>
 			<li>天气</li>
@@ -247,7 +269,7 @@ function qtjtright(){
 	</div>
 	<div class="qitanav2" id = "qtnav2">
 		<div class="mask" id="mask">
-		<div class="qtjtright" onClick="qtjtright()"><img src="image/rightjt.png" width="12px;" alt="jt" id="qtjtright"></div>
+		<div class="qtjtright" onClick="qtjtright()"><img src="image/rightjt.png" width="15px;" height="41px;" alt="jt" id="qtjtright"></div>
 		<div class="qt12">
 		<ul>
 			<li>享看</li>
@@ -283,13 +305,12 @@ function qtjtright(){
 		</div>
 			<div class="qt42">
 		<ul>
-			<li>星钻</li>
-			<li>QQ彩票</li>
+			<li>Q彩票</li>
 			<li>彩贝</li>
 			<li>时光画轴</li>
 			<li>天气</li>
 			<li>和平精英</li>
-			<li>用户</li>
+			<li>海豚智音</li>
 			<li>彩贝</li>
 		</ul>
 		</div>
@@ -301,8 +322,8 @@ function qtjtright(){
 	<a>热门赛事</a>
 		<div class="sshx"></div>
 		<div class="hthxc"></div>
-		<div class="time"><a><script>myDate.getMonth();</script>5月6日&nbsp;|&nbsp;</a></div>
-		<div class="xwhao"><a>下午好，今天有53场热门比赛</a><a style="color: rgba(20,121,215,1.00);font-size: 15px;letter-spacing: -3px;">&gt;&gt;</a></div>
+		<div class="time"><a><script>document.write(yf);</script>月<script>document.write(sj);</script>日&nbsp;|&nbsp;</a></div>
+		<div class="xwhao" onload="load()"><a id = "xwhao">上午好，今天有53场热门比赛"</a><a style="color: rgba(20,121,215,1.00);font-size: 15px;letter-spacing: -3px;">&gt;&gt;</a></div>
 		<div class="saishibg"><img src="image/saishi.png" alt="saishi" width="440" style="border-radius: 5px;"></div>
 		<!--赛事新闻视频列表-->
 		<div class="sslist">

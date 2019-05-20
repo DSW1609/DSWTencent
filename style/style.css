@@ -1,10 +1,4 @@
 @charset "utf-8";
-/*
-body{
-	margin: 0;
-	padding: 0;
-}
-*/
 .all{
 	position: relative;
 	width:100%;
@@ -241,7 +235,7 @@ color:rgba(255,255,255,1.00);
 	margin-top: 150px;
 	margin-left: 960px;
 	cursor: pointer;
-	background-image: url(../image/lbgg1.png);
+	background-image:url(../image/lbgg1.png);
 }
 .yaowen{
 	position: absolute;
@@ -330,7 +324,7 @@ color:rgba(255,255,255,1.00);
 .qitanav2{
 	position:relative;
 	float: right;
-	width: 430px;
+	width: 435px;
 	height: 170px;
 	cursor: pointer;
 	top: 250px;
@@ -340,16 +334,10 @@ color:rgba(255,255,255,1.00);
 }
 .mask{
 	float: right;
-	width: 430px;
+	width: 435px;
 	height: 170px;
-	animation:animate 1.5s alternate;
-	overflow: hidden;
-    }
-.mask2{
-	float: right;
-	width: 430px;
-	height: 170px;
-	animation:animate2 1.5s alternate;
+	transition: all 0.6s steps(60);
+	animation:animate 0.6s alternate;
 	overflow: hidden;
     }
 @keyframes animate{
@@ -357,12 +345,12 @@ color:rgba(255,255,255,1.00);
 		width: 0px;
     }
     to {
-		width: 430px;
+		width: 435px;
     }
 }
 @keyframes animate2{
     from {
-		width: 430px;
+		width: 435px;
     }
     to {
 		width: 0px;
@@ -372,24 +360,13 @@ color:rgba(255,255,255,1.00);
 	position:absolute;
 	width: 12px;
 	height: 20px;
-	margin-top: 2px;
-	animation: qtjt 1.5s infinite;
+	margin-left: -15px;
+	transition: all 0.5s steps(60);
 }
 .qtjtright{
 	position:absolute;
 	width: 12px;
 	height: 20px;
-	padding: 5px;
-	background: rgba(227,238,255,1.00);
-	animation: qtjt 1.5s infinite;
-}
-@keyframes qtjt{
-	0%,50%{
-		margin-left: -16px;
-	}
-	50%,100%{
-		margin-left: -13px;
-	}
 }
 .qtnavlogo{
 	position: absolute;
@@ -414,8 +391,8 @@ color:rgba(255,255,255,1.00);
 	float: right;
 	width: 420px;
 	height: 40px;
-	word-spacing:4px;
 	text-align:left;
+	word-spacing: 4px;
 	line-height: 40px;
 	border: 1px solid rgba(180,208,255,1.00);
 	border-right: none;
@@ -450,6 +427,7 @@ color:rgba(255,255,255,1.00);
 .qt4 a{
 	background: rgba(193,217,255,1.00);
 	padding:3px 10px;
+	margin-left: -10px;
 	border-radius: 10px;
 	color:rgba(255,255,255,1.00);
 }
