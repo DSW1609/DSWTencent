@@ -9,6 +9,7 @@ body{
 	height:2000px;
 	padding: 0px;
 	margin: 0px auto;
+	overflow: hidden;
 }
 .body{
 	width: 1100px;
@@ -169,7 +170,6 @@ body{
 	background: rgba(255,255,255,1.00);
 	border-left:1px solid rgba(199,199,199,1.00);
 	border-right:1px solid rgba(199,199,199,1.00);
-	transition: all     0.01s linear;
 }
 .ssright a{
 	margin-left: 24px;
@@ -177,7 +177,7 @@ body{
 .ssright:hover{
 	background: rgba(29,87,255,1.00);
 	color: rgba(255,255,255,1.00);
-	transition: all     0.01s linear;
+	transition: all  0.1s steps(60);
 }
 .ssright img{
 	position: absolute;
@@ -205,12 +205,11 @@ body{
 	color: rgba(29,87,255,1.00);
 	cursor: pointer;
 	background:rgba(255,255,255,1.00);
-	transition: all 0.01s linear;
 }
 .wyjb:hover{
 	color:rgba(255,255,255,1.00);
 	background:rgba(29,87,255,1.00);
-	transition: all 0.01s linear;
+	transition: all  0.1s steps(60);
 }
 .wyjb p{
 	font-size: 25px;
@@ -381,7 +380,6 @@ body{
 	font-size: 20px;
 	margin-top: 110px;
 	cursor: pointer;
-	transition: all     0.01s linear;
 }
 .zh2{
 	margin-left: 172.5px;
@@ -401,7 +399,7 @@ body{
 .zh1:hover,.zh2:hover,.zh3:hover,.zh4:hover{
 	color:rgba(255,255,255,1.00);
 	background:rgba(29,87,255,1.00);
-    transition: all 0.1s linear;
+    transition: all 0.1s steps(60);
 }
 .djgs{
 	position: absolute;
@@ -710,7 +708,7 @@ body{
 .hxbottom{
 	position: absolute;
 	margin-top: 1580px;
-	width:100%;
+	width:1100px;
 	height: 1px;
 	background:rgba(199,199,199,1.00);
 }

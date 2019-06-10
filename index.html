@@ -2,19 +2,18 @@
 <html>
 <head>
 <meta charset="utf-8">
-<!--<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">-->
-<link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="style/style.css">
 <script src="js/jquery-1.8.3.min.js"></script>
 <title>腾讯首页</title>
 <meta content="资讯,新闻,财经,房产,视频,NBA,科技,腾讯网,腾讯,QQ,Tencent" name="Keywords">
 <meta name="description" content="腾讯网从2003年创立至今，已经成为集新闻信息，区域垂直生活服务、社会化媒体资讯和产品为一体的互联网媒体平台。腾讯网下设新闻、科技、财经、娱乐、体育、汽车、时尚等多个频道，充分满足用户对不同类型资讯的需求。同时专注不同领域内容，打造精品栏目，并顺应技术发展趋势，推出网络直播等创新形式，改变了用户获取资讯的方式和习惯。" />
 <script type="text/javascript">
-try {//转到手机版首页
-  if (location.search.indexOf('?pc') !== 0 && /Android|Windows Phone|iPhone|iPod/i.test(navigator.userAgent)) {
-      window.location.href = 'https://xw.qq.com?f=qqcom';
-  }
-} catch (e) {}
+//try {//转到手机版首页
+//  if (location.search.indexOf('?pc') !== 0 && /Android|Windows Phone|iPhone|iPod/i.test(navigator.userAgent)) {
+//      window.location.href = 'https://xw.qq.com?f=qqcom';
+//  }
+//} catch (e) {}
 var myDate = new Date();//获取系统当前时间
 	var yf = myDate.getMonth()+1;//获取月份
 	var sj = myDate.getDate();//获取日期
@@ -137,7 +136,7 @@ function topo(){
 	<!--右上三个按钮-->
 	<div class="qzone" onclick="window.open('http://qzone.qq.com')"></div>
 	<div class="email" onclick="window.open('http://mail.qq.com')"></div>
-	<div class="up">登录</div>
+	<div class="up"  onclick="location.href='zhuce.html'">注册</div>
 	<!--导航开始-->
 	<div id="bs2" class="nav">
 		<ul>
@@ -188,7 +187,7 @@ function topo(){
 		<div class="ywhxc"></div>
 		<div class="tq"><a>济南</a></div>
 		<div class="tqimg"></div>
-		<div class="wendu"><a>15℃</a></div>
+		<div class="wendu"><a>30℃</a></div>
 	<div class="ywbody">
 		<h2>习近平对公安队伍的这些话激荡人心</h2>
 		<h3>人民日报头版头条：我国企业发展活力充沛</h3>
@@ -353,7 +352,7 @@ function topo(){
 		<div class="sshx"></div>
 		<div class="hthxc"></div>
 		<!--右侧时间开始-->
-		<div class="time"><a><script>document.write(yf);</script>月<script>document.write(sj);</script>日&nbsp;|&nbsp;</a></div>
+		<div class="time"><time><script>document.write(yf);</script>月<script>document.write(sj);</script>日&nbsp;|&nbsp;</time></div>
 		<!--时间结束-->
 		<!--右侧提示开始-->
 		<div class="xwhao"><a><script>document.write(s)</script>好，今天有53场热门比赛</a><a id = "gt">&gt;&gt;</a></div>

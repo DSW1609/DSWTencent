@@ -86,7 +86,7 @@ input[type="button"] {
 	background:rgba(0,82,217,1.00);
 	border-radius:50px;
 	text-align:center;
-	line-height:30px;
+	line-height:34px;
 	color:#FFF;
 }
 .sblue a{
@@ -136,10 +136,12 @@ color:rgba(255,255,255,1.00);
 	position:absolute;
 	width:40px;
 	height:35px;
+	line-height: 25px;
 	margin-top:20px;
 	cursor: pointer;
+	font:18px bold;
 	color:rgba(111,175,232,1.00);
-	margin-left:1360px;
+	margin-left:1355px;
 	}
 .nav,.nav2,.nav3{
 	position: absolute;
@@ -218,15 +220,19 @@ color:rgba(255,255,255,1.00);
 }
 #img1{
 	animation-delay: 0s;
+	-webkit-animation-delay:0s;
 }
 #img2{
 	animation-delay: 3s;
+	-webkit-animation-delay: 3s;
 }
 #img3{
 	animation-delay: 6s;
+	-webkit-animation-delay: 6s;
 }
 #img4{
 	animation-delay: 9s;
+	-webkit-animation-delay: 9s;
 }
 .lbgg1{
 	position: absolute;
@@ -492,7 +498,7 @@ color:rgba(255,255,255,1.00);
 	margin-top: -25px;
 	margin-left: 150px;
 }
-.time a{
+.time time{
 	color:rgba(0,82,217,1.00);
 	font-weight: 500;
 	font-size: 15px;

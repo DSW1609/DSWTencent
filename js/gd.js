@@ -114,29 +114,3 @@ $(function(){//打击公示滚动
 	var jfxfx = document.getElementById("jfx");
 	jfxfx.setAttribute('src',"image/xleft.gif") 
 }
-	//滑动出现NAV2
-$(function () {  //绑定滚动条事件          
-    $(window).bind("scroll", function () {//绑定滚动条事件 
-       var sTop = $(window).scrollTop();
-       var sTop = parseInt(sTop);
-       if (sTop >= 50) {
-         if (!$("#nav2").is(":visible")) {
-           try {
-              $("#nav2").slideDown();
-             } catch (e) {
-               $("#nav2").show();
-    }}}else {
-         if ($("#nav2").is(":visible")) {
-           try {
-               $("#nav2").slideUp();
-             } catch (e) {
-               $("#nav2").hide();
-   }}} 
- });
-})// JavaScript Document
-var xmlhttp;
-if(window.XMLHttpReques){
-	xmlhttp = new XMLHttpRequest()
-}else{
-	xmlhttp = new ActiveXObject("Microsoft.XMLHttp");
-}

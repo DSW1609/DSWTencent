@@ -134,15 +134,14 @@ function tjo(){
 }
 function yhzc() {
     var yhzc = document.getElementById('yhzc');
-//	var zzl = document.getElementById('zzl');
-//	var zzr = document.getElementById('zzr');
     var color = [ 'green', 'yellow', 'gold', 'orange', 'pink'];
 //	var size = ['100px','130px'];
     setInterval(function() {
     	var radom = Math.floor(Math.random() * color.length + 1) - 1; 
-//	  	var size2 = Math.floor(Math.random() * size.length + 1) - 1; 
       	yhzc.style.color = color[radom]; 
-//	  	zzl.style.fontSize = size[size2];
-//	  	zzr.style.fontSize = size[size2];
 	}, 1000);
+}
+function tjcg(){
+    window.open ("index.html","index");
+
 }

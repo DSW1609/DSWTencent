@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico" />
+<link rel="stylesheet" type="text/css" href="style/zhuce.css">
+<link rel="stylesheet" type="text/css" href="style/form.css">
+<script src="js/form.js"></script>
+<title>腾讯注册</title>
+</head>
+<body  onmouseover="yhzc()">
+	<script>
+	function bs2(){//变色代码-3(控制类名)
+	var bs2 = document.getElementById("bs2");
+	bs2.className="nav2";
+}
+function bs(){
+	var bs = document.getElementById("bs2");
+	bs.className="nav";
+}
+function bs3(){
+	var bs3= document.getElementById("bs2");
+	bs3.className="nav3";
+}//变色代码结束
+	</script>
+<div class="all">
+<div class="nr">
+	<!--logodiv-->
+	<div class="logo" onclick="location.href='index.html'"><img src="image/qq_logo_2x.png" alt="腾讯网" width="131px;"></div>
+	<!--logo结束-->
+	<!--右侧节气开始-->
+	<div class="jq"><img src="image/xiaoman2019Qshou.png" width="420px;" alt="jq"></div>
+	<!--右侧节气结束-->
+	<!--导航右侧触碰按钮-->
+	<div class="bs"><input type="button" onMouseover="bs2()"></div>
+	<div class="bs2"><input type="button" onMouseover="bs()"></div>
+	<div class="bs3"><input type="button" onMouseover="bs3()"></div>
+	<!--导航搜索栏-->
+		<div class="sousuo" id="ss">
+		<div class="jt"><img src="image/timg.jpg" alt="" width="10px;" height="5px;"></div>
+			<select class="xl">
+						<option>网页</option>
+						<option>图片</option>
+						<option>视频</option>
+						<option>音乐</option>
+						<option>地图</option>
+			</select>
+		</div>
+	<div class="shuru"><input type="text" style="width: 320px;height: 20px;border: none;background:#f3f6f8;"></div>
+	<div class="sblue"><a href="http://www.sogou.com" target="_blank">搜狗搜索</a></div>
+	<!--搜索结束-->
+	<!--右上三个按钮-->
+	<div class="qzone" onclick="window.open('http://qzone.qq.com')"></div>
+	<div class="emailzhuce" onclick="window.open('http://mail.qq.com')"></div>
+	<div class="up"  onclick="location.href='zhuce.html'">注册</div>
+	<!--导航开始-->
+	<div id="bs2" class="nav">
+		<ul>
+			<li><a href="http://news.qq.com/" target="_blank">新闻</a></li>
+			<li><a href="http://v.qq.com/" target="_blank">视频</a></li>
+			<li><a href="http://news.qq.com/ch/phont/" target="_blank">图片</a></li>
+			<li><a href="http://news.qq.com/ch/milite/" target="_blank">军事</a></li>
+			<li><a href="http://sports.qq.com/" target="_blank">体育</a></li>
+			<li><a href="http://sports.qq.com/nba/" target="_blank">NBA</a></li>
+			<li><a href="http://news.qq.com/ch/ent/" target="_blank">娱乐</a></li>
+			<li><a href="http://finance.qq.com/" target="_blank">财经</a></li>
+			<li><a href="http://new.qq.com/ch/tech/" target="_blank">科技</a></li>
+			<li><a href="http://news.qq.com/ch/fashion/" target="_blank">时尚</a></li>
+			<li><a href="http://auto.qq.com" target="_blank">汽车</a></li>
+			<li><a href="http://house.qq.com/" target="_blank">房产</a></li>
+			<li><a href="https://new.qq.com/ch/edu/" target="_blank">教育</a></li>
+			<li><a href="https://new.qq.com/ch/cul/" target="_blank">文化</a></li>
+			<li><a href="http://news.qq.com/ch/game/" target="_blank">游戏</a></li>
+			<li><a href="http://astro.fashion.qq.com/" target="_blank">星座</a></li>
+			<li><a href="http://www.qq.com/map" target="_blank">更多</a></li>
+		</ul>
+	</div>
+	<!--导航结束-->
+    <!--注册表单开始-->
+	<div class="formnr">
+    <!--左右两侧文字-->
+	<span id = "yhzc"><div class="zzl" id="zzl"><a>用</a><br /><a>户</a></div>
+		<div class="zzr" id = "zzr"><a>注</a><br /><a>册</a></div></span>
+		<div class="formmh"></div>
+		<!--form表单开始-->
+		<div class="form">
+		<form method="post" name="form" id="form" style="text-align: center;">
+		<div class="name"><a>姓名：</a><br /><div class="yz"><a id = "xmyza"></a></div>
+		<input type="text" placeholder="王嘉辉" id="te1" onMouseover="ted()" onMouseOut="teo()"><br /></div>
+		<div class="email"><a>邮箱：</a><br /><div class="yz"><a id = "yxyza"></a></div>
+		<input type="email" placeholder="DSW7296666@163.com" id="em1" onMouseover="em()" onMouseOut="emo()"><br /></div>
+		<div class="url"><a>网址：</a><br /><div  class="yz"><a id = "wzyza"></a></div>
+		<input type="url" placeholder="DSW1609.github.io" id="wz1" onMouseover="wz()" onMouseOut="wzo()"><br /></div>
+		<div class="num"><a>年龄：</a><br /><div  class="yz"><a id = "nlyza"></a></div>
+		<input type="number" placeholder="20" id="nl1" onMouseover="nl()" onMouseOut="nlo()"><br /></div>
+		<div class="range"><a id="gzl">工资：</a><a id="gz" style="margin-left: -10px;color: red">50000</a><br />
+		<input type="range" placeholder="工资" id="gz1" min="0" step="10" max="100000" oninput="change()" onchange="change()"><br /></div>
+		<div class="qt"><textarea placeholder="其他" id="qt1" onMouseover="qt()" onMouseOut="qto()"></textarea><br /></div>
+		<div class="sub"><input type="submit" id="tj1" value="提交" onMouseover="tj()" onMouseOut="tjo()" onclick="tjcg()"></div>
+		</form>
+		</div>
+		<!--form表单结束-->
+	</div>
+	<!--form内容结束-->
+	<!--底部广告-->
+	<div class="bggzhuce"></div>
+	<!--底部文字开始-->
+	<div class="bottomzhuce">
+	<a>关于腾讯 | About Tencent | 服务协议 | 隐私政策 | 开放平台 | 商务洽谈 | 腾讯招聘 | 腾讯公益 | 客服中心 | 网站导航 | 客户端下载 | 版权所有</a><br />
+    <a>深圳举报中心 | 深圳公安局 | 抵制违法广告承诺书 | 版权保护投诉指引 | 广东省通管局</a><br />
+    <a>粤网文[2017]6138-1456号 新出网证（粤）字010号 网络视听许可证1904073号 增值电信业务经营许可证：粤B2-20090059 B2-20090028</a><br />
+    <a>新闻信息服务许可证 粤府新函[2001]87号 违法和不良信息举报电话：0755-83765566-9 粤公网安备 44030002000001号</a><br />
+    <a>互联网药品信息服务资格证书 （粤）—非营业性—2017-0153</a><br />
+    <a>Copyright 1998 - 2019 Tencent. All Rights Reserved</a>
+	</div>
+	<div class="btlogozhuce"><img src="image/btlogo.png" alt="bt" width="670px"/></div>
+</div>
+</div>
+</body>
+</html>
