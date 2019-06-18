@@ -6,19 +6,92 @@
 <link rel="stylesheet" type="text/css" href="style/new.css">
 </head>
 <body>
+<script>
+	function ss(){
+		var ss = document.getElementById("ssimg");
+		var ssright = document.getElementById("ssright");
+		var tq = document.getElementById("tq");
+		ss.setAttribute('src',"images/ssrighton.PNG");
+		ssright.style.width = "250px";
+		tq.style.right = "100px";
+	}
+	function sso(){
+		var sso = document.getElementById("ssimg");
+		var ssright = document.getElementById("ssright");
+		var tq = document.getElementById("tq");
+		sso.setAttribute('src',"images/ssrighto.PNG");
+		ssright.style.width = "180px";
+		tq.style.right = "30px";
+	}
+	function navimg(){
+		var navimg = document.getElementById("navimg");
+		var gengduo = document.getElementById("gengduo");
+		navimg.setAttribute('src',"images/fko.PNG");
+		gengduo.style.display = "block";
+		navimg.style.transform = "rotate(180deg)";
+	}
+	function gdo(){
+		var gengduo = document.getElementById("gengduo");
+		var navimgo = document.getElementById("navimg");
+		navimgo.setAttribute('src',"images/fk.PNG");
+		gengduo.style.display = "none";
+		navimgo.style.transform = "rotate(0deg)";
+	}
+</script>
 <div class="body">
   <div class="head">
-	<div class="txlogo"><img src="images/qq_logo_2x.png" alt="腾讯网" width="131px;"></div>
+	<div class="txlogo" onclick="location.href='../index.html'"><img src="images/qq_logo_2x.png" alt="腾讯网" width="131px"></div>
 	<div class="nav">
-	  <li><a href="*">要闻</a></li>
-	  <li><a href="*">娱乐</a></li>
-	  <li><a href="*">财经</a></li>
-	  <li><a href="*">体育</a></li>
-	  <li><a href="*">图片</a></li>
-	  <li><a href="*">时尚</a></li>
-	  <li><a href="*">🅿</a></li>
+	  <li><a href="#">要闻</a></li>
+	  <li><a href="#">娱乐</a></li>
+	  <li><a href="#">财经</a></li>
+	  <li><a href="#">体育</a></li>
+	  <li><a href="#">图片</a></li>
+	  <li><a href="#">时尚</a></li>
+	  <img onMouseover = "navimg()" id = "navimg" src = "images/fk.png" width = "17px;" alt="fk">
+	  <div id = "gengduo" onMouseover = "navimg()" onMouseout = "gdo()">
+		<li><a href="#">军事</a></li>
+		<li><a href="#">游戏</a></li>
+		<li><a href="#">科技</a></li>
+		<li><a href="#">数码</a></li>
+		<li><a href="#">法制</a></li>
+		<li><a href="#">房产</a></li>
+		<li><a href="#">汽车</a></li>
+		<li><a href="#">文化</a></li>
+		<li><a href="#">健康</a></li>
+		<li><a href="#">动漫</a></li>
+		<li><a href="#">旅游</a></li>
+		<li><a href="#">生活</a></li>
+		<li><a href="#">历史</a></li>
+		<li><a href="#">美食</a></li>
+		<li><a href="#">星座</a></li>
+		<li><a href="#">育儿</a></li>
+		<li><a href="#">时政</a></li>
 	  </div>
-	  <div class="ssright"><input type="text" placeholder="央视网"><img src = "images/ssrighto.PNG" width="18px" alt="ss"></div>
+	  </div>
+	  <div class="ssright" onClick="ss()" onMouseOut="sso()"><input id = "ssright" type="text" placeholder="央视网"><img id = "ssimg" src = "images/ssrighto.PNG" width="18px" alt="ss"></div>
+	  <div class="yjdl"><a href="#">一键登录</a></div>
+      <div id = "tq"><div class = "tqfuhao"></div><a href="https://tianqi.qq.com" target="_blank">济南市 26 °晴 | 预警</a></div>
+  </div>
+  <div class = "nr">
+	<sapn id = "title">习近平主席访问吉、塔两国并出席上合峰会和亚信峰会成果丰硕</sapn>
+	  <div class = "left-nr">
+		  <span class = "line"></span>
+	      <span id = "nian">2019</span>
+		  <span class = "line"></span><br />
+		  <span id = "yueri">06/18</span><br />
+		  <span id = "shifen">21:32</span><br />
+		  <span id = "author">新华视点</span>
+		  <div class = "fenxiang">
+		      <span class = "line"></span>
+		      <span id = "fenxiang">分享</span>
+		      <span class = "line"></span>
+			  <div class = "wx"></div>
+			  <div class = "qq"></div>
+			  <div class = "qzone"></div>
+			  <div class = "weibo"></div>
+		  </div>
+	  </div>
   </div>
 </div>
 </body>

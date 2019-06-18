@@ -14,6 +14,7 @@
 	position: absolute;
 	left: 20px;
 	top:6px;
+	cursor: pointer;
 }
 .nav{
 	position: absolute;
@@ -34,26 +35,214 @@
 .nav a:hover{
 	color: rgb(0, 82, 217);
 }
-.ssright input[type="text"]{
+.nav img{
+	position: relative;
+	top:3px;
+	left: 30px;
+	transition: all 0.2s steps(60);
+}
+#tq{
 	position: relative;
 	float: right;
+	width: 150px;
+	height: 20px;
+	top:10px;
+	transition: all 0.2s steps(60);
+	right: 30px;
+}
+.tqfuhao{
+	position: absolute;
+	top:5px;
+	left: -20px;
+	width: 15px;
+	height: 15px;
+	background: #ffd54f;
+	border-radius: 20px;
+}
+#tq a{
+	font-size: 13px;
+	color: black;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+#tq a:hover{
+	color: #408ed6;
+}
+.ssright{
+	position: relative;
+	float: right;
+	right: 120px;
+	width: 200px;
+	height: 50px;
+}
+#ssright{
+	position: relative;
 	width: 180px;
 	height: 32px;
-	right: 120px;
+	float: right;
 	border: none;
 	font-size: 16px;
 	color: rgb(180, 180, 180);
 	padding-left: 15px;
 	border-radius: 6px;
-	transition: all 0.3s steps(60);
+	transition: all 0.2s steps(60);
 	background: rgb(244, 244, 244);
 	top:6px;
 }
-.ssright input[type="text"]:hover{
-	width: 280px;
-}
 .ssright img{
-	position:absolute;
+	position: absolute;
 	top:13px;
-	left: 1150px;
+	right: 12px;
+}
+.yjdl{
+	position: relative;
+	float: right;
+	width: 80px;
+	height: 30px;
+	top:7px;
+	right: -186px;
+	font-size: 12px;
+	text-align: center;
+	border-radius: 3px;
+	background: #f7fbfe;
+	border: 1px solid #a8d5ff;
+	line-height: 30px;
+}
+.yjdl a{
+	text-decoration: none;
+	color: #2291f7;
+}
+.yjdl:hover{
+	background: #e9f4ff;
+}
+#gengduo{
+	position: absolute;
+	width: 400px;
+	height: 250px;
+	background: #fff;
+	margin-top:5px;
+	display: none;
+	margin-left: 385px;
+	z-index: 999;
+	box-shadow: 1px 1px 10px rgba(235, 235, 235,1.00);
+	border:  1px solid rgba(235, 235, 235,1.00);
+}
+#gengduo li {
+	margin-left: 38px;
+	margin-top: 10px;
+}
+.nr{
+	position: relative;
+	width: 1200px;
+	height: 1000px;
+	top:50px;
+	margin: 0 auto;
+}
+#title{
+	font-size: 40px;
+	color: #333333;
+	font-weight: bold;
+}
+.left-nr{
+	position: absolute;
+	width: 150px;
+	height: 800px;
+	top:100px;
+	padding-right: 10px;
+	line-height: 40px;
+	text-align: center;
+	font-family:"STXihei";
+	border-right: 2px solid #eee;
+}
+#nian,#shifen{
+	font-size: 20px;
+	letter-spacing: -1px;
+}
+#nian span,#fenxiang span{
+	color: #e8e8e8;
+}
+#yueri{
+	font-size: 30px;
+}
+.line{
+	position: relative;
+    display: inline-block;
+    width: 20px;
+	top:-5px;
+	border-top: 1px solid #ccc ;
+}
+#author{
+	position: relative;
+	top:20px;
+	color: #808080;
+	font-size: 14px;
+}
+.fenxiang{
+	position: relative;
+	width: 150px;
+	height: 300px;
+	top:100px;
+	color: #808080;
+	font-size: 14px;
+}
+.fenxiang .line{
+	width: 30px;
+}
+.wx,.qq,.qzone,.weibo{
+	position: relative;
+	width: 45px;
+	height: 45px;
+	margin: 0 auto;
+	transition: all 0.2s steps(60);
+	background-size: 45px 45px;
+}
+@keyframes xz{
+	0%{
+	  transform: rotate(0deg);
+	}
+	25%,50%{
+	  transform: rotate(10deg);
+	}
+	50%,75%{
+	  transform: rotate(10deg);
+	}
+	75%,100%{
+	  transform: rotate(0deg);
+	}
+}
+.wx{
+	top:10px;
+	background-image: url(../images/wx.PNG);
+}
+.qq{
+	top:25px;
+	background-image: url(../images/qq.PNG);
+}
+.qzone{
+	top:40px;
+	background-image: url(../images/qzone.PNG);
+}
+.weibo{
+	top:55px;
+	background-image: url(../images/weibo.PNG);
+}
+.wx:hover{
+	animation: xz 0.3s linear;
+	-webkit-animation:xz 0.3s linear;
+	background-image: url(../images/wxh.PNG);
+}
+.qq:hover{
+	animation: xz 0.3s linear;
+	-webkit-animation:xz 0.3s linear;
+	background-image: url(../images/qqh.PNG);
+}
+.qzone:hover{
+	animation: xz 0.3s linear;
+	-webkit-animation:xz 0.3s linear;
+	background-image: url(../images/qzoneh.PNG);
+}
+.weibo:hover{
+	animation: xz 0.3s linear;
+	-webkit-animation:xz 0.3s linear;
+	background-image: url(../images/weiboh.PNG);
 }
