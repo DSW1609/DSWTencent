@@ -1,19 +1,26 @@
 @charset "utf-8";
+body{
+	margin: 0;
+}
 .body{
 	position: relative;
 	width: 100%;
 	height: 2000px;
+	font-family: "MicroSoft Yahei";
 }
 .head{
-	position: relative;
+	position: fixed;
 	width: 100%;
 	height: 55px;
+	background: #fff;
+	z-index: 999;
+	padding-top: 10px;
 	border-bottom: 1px solid rgba(235, 235, 235,1.00);
 }
 .txlogo{
 	position: absolute;
 	left: 20px;
-	top:6px;
+	top:16px;
 	cursor: pointer;
 }
 .nav{
@@ -46,16 +53,18 @@
 	float: right;
 	width: 150px;
 	height: 20px;
-	top:10px;
+	top:12px;
+	line-height: 20px;
 	transition: all 0.2s steps(60);
 	right: 30px;
 }
 .tqfuhao{
-	position: absolute;
-	top:5px;
-	left: -20px;
+	position:relative;
 	width: 15px;
 	height: 15px;
+	top:2px;
+	margin-right: 10px;
+	display: inline-block;
 	background: #ffd54f;
 	border-radius: 20px;
 }
@@ -134,13 +143,15 @@
 .nr{
 	position: relative;
 	width: 1200px;
-	height: 1000px;
-	top:50px;
+	height: auto;
+	top:100px;
 	margin: 0 auto;
 }
 #title{
-	font-size: 40px;
+	position: relative;
+	font-size: 45px;
 	color: #333333;
+	left: 30px;
 	font-weight: bold;
 }
 .left-nr{
@@ -188,12 +199,17 @@
 .fenxiang .line{
 	width: 30px;
 }
+#wxewm{
+	position: absolute;
+	top:-130px;
+	display: none;
+}
 .wx,.qq,.qzone,.weibo{
 	position: relative;
 	width: 45px;
 	height: 45px;
 	margin: 0 auto;
-	transition: all 0.2s steps(60);
+	transition: all 0.3s steps(60);
 	background-size: 45px 45px;
 }
 @keyframes xz{
@@ -201,29 +217,26 @@
 	  transform: rotate(0deg);
 	}
 	25%,50%{
-	  transform: rotate(10deg);
+	  transform: rotate(15deg);
 	}
-	50%,75%{
-	  transform: rotate(10deg);
-	}
-	75%,100%{
+	50%,100%{
 	  transform: rotate(0deg);
 	}
 }
 .wx{
-	top:10px;
+	top:15px;
 	background-image: url(../images/wx.PNG);
 }
 .qq{
-	top:25px;
+	top:30px;
 	background-image: url(../images/qq.PNG);
 }
 .qzone{
-	top:40px;
+	top:45px;
 	background-image: url(../images/qzone.PNG);
 }
 .weibo{
-	top:55px;
+	top:60px;
 	background-image: url(../images/weibo.PNG);
 }
 .wx:hover{
@@ -245,4 +258,40 @@
 	animation: xz 0.3s linear;
 	-webkit-animation:xz 0.3s linear;
 	background-image: url(../images/weiboh.PNG);
+}
+.newbody{
+	position: absolute;
+	width: 860px;
+	height: auto;
+	left: 200px;
+	top:100px;
+}
+.newbody span{
+	position: relative;
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 40px;
+}
+
+#newsbq{
+	position: relative;
+	font-weight: bold;
+}
+.btm{
+	position: relative;
+	width: 750px;
+	height: 150px;
+	margin: 0 auto;
+	top:2350px;
+	line-height: 30px;
+	text-align: center;
+}
+.btm a,.btm span{
+	text-decoration: none;
+	font-size: 13px;
+	color: #838383;
+}
+.btm a:hover{
+	text-decoration: underline;
+	color: #bd0a01;
 }

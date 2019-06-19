@@ -187,7 +187,7 @@ color:rgba(255,255,255,1.00);
 .nav3 a:hover{
 	background:rgba(255,155,195,1.00);
 }
-.yaowen h2:hover,.yaowen h3:hover,.huati h2:hover,.huati h3:hover{
+.yaowen h2:hover,.yaowen a:hover,.yaowen h3:hover,.huati h2:hover,.huati h3:hover{
 	color:rgba(0,82,217,1.00);
 }
 .gg1{
@@ -248,7 +248,6 @@ color:rgba(255,255,255,1.00);
 	width: 450px;
 	height: 800px;
 	font-size: 20px;
-	cursor: pointer;
 	color:#1479dd;
 	margin-top: 250px;
 }
@@ -306,7 +305,6 @@ color:rgba(255,255,255,1.00);
 	height: 800px;
 	font-size: 20px;
 	color:#1479dd;
-	cursor: pointer;
 	z-index: 996;
 	padding-top: 30px;
 	margin-top: 220px;
@@ -693,6 +691,15 @@ color:rgba(255,255,255,1.00);
 	line-height: 30px;
 	font-size: 14px;
 	color:rgba(101,101,101,1.00);
+}
+.bottom a,.bottom span{
+	text-decoration: none;
+	font-size: 14px;
+	color: #838383;
+}
+.bottom a:hover{
+	text-decoration: underline;
+	color: #bd0a01;
 }
 .btlogo{
 	position:absolute;

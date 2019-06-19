@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="style/index.css">
+<title>新闻中心-腾讯网</title>
+</head>
+<body>
+<script>
+	var myDate = new Date();//获取系统当前时间
+	var ni = myDate.getFullYear();//获取年
+	var yf = myDate.getMonth()+1;//获取月份
+	var sj = myDate.getDate();//获取日期
+	var h = myDate.getHours();//获取小时
+	var xq = myDate.getDay(); //获取当前星期X(0-6,0代表星期天)
+	var weekday=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+</script>
+<div class = "body">
+    <div class="head">
+	<div class="txlogo" onclick="location.href='../index.html'"><img src="images/qq_logo_2x.png" alt="腾讯网" width="131px"></div>
+	<div class="nav">
+		<li><a href="#"><strong>要闻</strong></a></li>
+	    <li><a href="#">视频</a></li>
+	    <li><a href="#">北京</a></li>
+	    <li><a href="#">娱乐</a></li>
+	    <li><a href="#">体育</a></li>
+	    <li><a href="#">军事</a></li>
+	    <li><a href="#">NBA</a></li>
+	    <li><a href="#">科技</a></li>
+	    <li><a href="#">财经</a></li>
+	    <li><a href="#">汽车</a></li>
+	    <li><a href="#">时尚</a></li>
+	    <a href="#" id = "nav-more">更多+</a>
+		<div class="ywhx"></div>
+	</div>
+	    <div class="yjdl"><a href="#">一键登录</a></div>
+    </div>
+	<div class = "nr">
+		<div class = "yaowen"><span>今日要闻</span>
+		<div class = "shijian"><span><script>document.write(ni);</script>年<script>document.write(yf);</script>月<script>document.write(sj);</script>日 <script>document.write(weekday[xq]);</script></span><img src = "images/newstq.PNG" alt = "tq"> <a href = "https://tianqi.qq.com">济南市29° 多云 | 预警</a></div>
+		<div class = "yw-xh"></div>
+		</div>
+		<div class = "jrht">
+			<span><strong><a style = "color: #2291f6">|</a> 今日话题</strong></span>
+			<div class="htimg">
+				<div class="httext"><a>到处都是“公馆”，中国小区命名为何如此没文化？</a></div>
+				<img src = "images/htimg.PNG" alt = "htimg" width="120px">
+			</div>
+			<div class = "htli">
+				<li><a>又见上海电影节抢票热,电影节不该只有狂欢</a></li><br />
+				<li><a>禁止高薪从中西部抢人才背后：高校贫富差距巨大</a></li><br />
+				<li><a>5天上岗年入百万的“微整形”,年轻人怎么就上当了？</a></li><br />
+				<li><a>宜宾地震救灾：我们是否高估了地震预警系统？</a></li><br />
+			</div>
+		</div>
+		<div class = "yaowenbody">
+		<div class = "ywli"><a href = "#" id = "ywtitle"><strong>十八大以来首次访问朝鲜在即 看习近平评价中朝关系</strong></a></div>
+		<div class = "ywli"><a href = "#">从中亚之行的三句古语看习近平的外交理念 </a><a href = "#">理上网来</a></div>
+		<div class = "ywli"><a href = "#">习近平回信勉励北京体育大学研究生冠军班学生 </a><a href = "#">全文</a></div>
+		<div class = "ywli"><a href = "#">人民日报：弱肉强食的“丛林法则”行不通 </a><a href = "#">学习强国</a></div>
+		<div class = "ywli"><a href = "#">国际锐评：卢比奥低劣的变脸戏法让人越看越明白</a></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -183,6 +183,15 @@ color:rgba(255,255,255,1.00);
 	font-size: 14px;
 	color:rgba(101,101,101,1.00);
 }
+.bottomzhuce a,.bottomzhuce span{
+	text-decoration: none;
+	font-size: 14px;
+	color: #838383;
+}
+.bottomzhuce a:hover{
+	text-decoration: underline;
+	color: #bd0a01;
+}
 .btlogozhuce{
 	position:absolute;
 	width: 670px;
