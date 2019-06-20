@@ -165,11 +165,35 @@ body{
 	top:30px;
 	background: #f7f8f9;
 }
-.jrht span{
+.jz{
+	position: absolute;
+	width: 300px;
+	height: 400px;
+	top:510px;
+	left: 700px;
+	background: #f7f8f9;
+}
+.gy{
+	position: absolute;
+	width: 300px;
+	height: 460px;
+	top:940px;
+	left: 700px;
+	background: #f7f8f9;
+}
+.gybtm{
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	top:1430px;
+	left: 700px;
+	background: #f7f8f9;
+}
+.jrhtlogo{
 	position: relative;
-	font-size: 20px;
-	top:10px;
-	letter-spacing: 1px;
+	top:12px;
+	padding-left: 10px;
+	border-left: 5px solid #2291f6;
 }
 .htimg{
 	position: relative;
@@ -194,5 +218,96 @@ body{
 	margin: 0 auto;
 	font-size: 15px;
 }
-.htli a{
+.htli a,.httext a{
+	text-decoration: none;
+	color: black;
+}
+.htli a:hover,.httext a:hover{
+	color: #2291f7;
+}
+.rdjx{
+	position: relative;
+	width: 670px;
+	height:1000px;
+	top:30px;
+}
+.rdjx span{
+	font-size: 22px;
+	color: #5184eb;
+	font-weight: bold;
+}
+.rdnr{
+	position: relative;
+	width: 670px;
+	height: 180px;
+	top:10px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.rdnr img{
+	position: absolute;
+	top:25px;
+}
+.rdnrte{
+	position: absolute;
+	left: 240px;
+	top:25px;
+}
+.rdnr:hover{
+	background: #f3f6f8;
+}
+.rdzt{
+	background: #4889f3;
+	color: #fff;
+	font-size: 15px;
+	padding: 2px 6px;
+	border-radius: 5px;
+}
+.rdtitle{
+	position: relative;
+	text-decoration: none;
+	color: black;
+	line-height: 30px;
+	font-size: 20px;
+}
+.rdtitle:hover{
+	color: #2291f7;
+}
+.rdauthor{
+	position: absolute;
+	left: 240px;
+	top:138px;
+	color: #666666;
+	font-size: 12px;
+}
+.rdfx{
+	position: relative;
+	float: right;
+	top:115px;
+	right: 20px;
+	font-size: 12px;
+}
+.rdfx a{
+	position: relative;
+	padding-left: 20px;
+	top:22px;
+	color: #666666;
+	text-decoration: none;
+}
+.btm{
+	position: relative;
+	width: 750px;
+	height: 150px;
+	margin: 0 auto;
+	top:1050px;
+	line-height: 30px;
+	text-align: center;
+}
+.btm a,.btm span{
+	text-decoration: none;
+	font-size: 13px;
+	color: #838383;
+}
+.btm a:hover{
+	text-decoration: underline;
+	color: #bd0a01;
 }
