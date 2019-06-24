@@ -141,7 +141,3 @@ function yhzc() {
       	yhzc.style.color = color[radom]; 
 	}, 1000);
 }
-function tjcg(){
-    window.open ("index.html","index");
-
-}
