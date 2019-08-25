@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="shortcut icon" href="/favicon.ico">
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 <link rel="stylesheet" type="text/css" href="style/style.css">
 <script src="js/jquery-1.8.3.min.js"></script>
 <title>腾讯首页</title>
@@ -26,7 +26,7 @@ var myDate = new Date();//获取系统当前时间
 	}else{
 		s = '晚上';
 	}
-function reloadPage(){//刷新  
+function reloadPage(){//刷新
   window.location.reload();
   }
 function topFunction() {//回到顶部
@@ -46,15 +46,15 @@ function bs3(){
 	bs3.className="nav3";
 }//变色代码结束
 //往下滑动出现右侧快捷按钮
- $(function () {  //绑定滚动条事件          
-     $(window).bind("scroll", function () {//绑定滚动条事件 
+ $(function () {  //绑定滚动条事件
+     $(window).bind("scroll", function () {//绑定滚动条事件
         var sTop = $(window).scrollTop();
         var sTop = parseInt(sTop);
         if (sTop >= 200) {
 			$("#kjbt").show();
 		}else {
 			$("#kjbt").hide();
-		} 
+		}
   });
 })
 //右侧快捷按钮结束
